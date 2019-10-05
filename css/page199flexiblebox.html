@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.one {
+display: flex;
+background-color: skyblue;
+}
+.one>div {
+background-color: grey;
+margin: 10px;
+padding: 20px;
+font-size: 25px;
+}
+.two {
+display: flex;
+flex-direction: column;
+background-color:skyblue;
+}
+.two>div {
+background-color: grey;
+width: 100px;
+margin: 10px;
+text-align: center;
+line-height: 75px;
+font-size: 30px;
+}
+.three {
+display: flex;
+flex-direction: column-reverse;
+background-color:skyblue;
+}
+.three>div {
+background-color: grey;
+width: 100px;
+margin: 10px;
+text-align: center;
+line-height: 75px;
+font-size: 30px;
+}
+.four {
+display: flex;
+flex-direction: row;
+background-color:skyblue;
+}
+.four>div {
+background-color: grey;
+width: 100px;
+margin: 10px;
+text-align: center;
+line-height: 75px;
+font-size: 30px;
+}
+.five {
+display: flex;
+flex-direction: row-reverse;
+background-color:skyblue;
+}
+.five>div {
+background-color: grey;
+width: 100px;
+margin: 10px;
+text-align: center;
+line-height: 75px;
+font-size: 30px;
+}
+.six {
+display: flex;
+flex-wrap: wrap;
+background-color:skyblue;
+}
+.six>div {
+background-color: grey;
+width: 100px;
+margin: 10px;
+text-align: center;
+line-height: 75px;
+font-size: 30px;
+}
+.seven {
+display: flex;
+flex-wrap: wrap-reverse;
+background-color:skyblue;
+}
+.seven>div {
+background-color: grey;
+width: 100px;
+margin: 10px;
+text-align: center;
+line-height: 75px;
+font-size: 30px;
+}
+.eight {
+display: flex;
+flex-flow: row wrap;
+background-color:skyblue;
+}
+.eight>div {
+background-color: grey;
+width: 100px;
+margin: 10px;
+text-align: center;
+line-height: 75px;
+font-size: 30px;
+}
+.nine {
+display: flex;
+justify-content: center;    
+background-color:skyblue;
+}
+.nine>div {
+background-color: grey;
+width: 100px;
+margin: 10px;
+text-align: center;
+line-height: 75px;
+font-size: 30px;
+}
+.ten {
+display: flex;
+justify-content: flex-start;    
+background-color:skyblue;
+}
+.ten>div {
+background-color: grey;
+width: 100px;
+margin: 10px;
+text-align: center;
+line-height: 75px;
+font-size: 30px;
+}
+.eleven {
+display: flex;
+justify-content: flex-end;    
+background-color:skyblue;
+}
+.eleven>div {
+background-color: grey;
+width: 100px;
+margin: 10px;
+text-align: center;
+line-height: 75px;
+font-size: 30px;
+}
+.tew {
+display: flex;
+justify-content: space-around;    
+background-color:skyblue;
+}
+.tew>div {
+background-color: grey;
+width: 100px;
+margin: 10px;
+text-align: center;
+line-height: 75px;
+font-size: 30px;
+}
+.thir {
+display: flex;
+justify-content: space-between;    
+background-color:skyblue;
+}
+.thir>div {
+background-color: grey;
+width: 100px;
+margin: 10px;
+text-align: center;
+line-height: 75px;
+font-size: 30px;
+}
+.fo1 {
+display: flex;
+height: 200px;
+align-items: center;  
+background-color:skyblue;
+}
+.fo1>div {
+background-color: grey;
+width: 100px;
+margin: 10px;
+text-align: center;
+line-height: 75px;
+font-size: 30px;
+}
+.fo2 {
+display: flex;
+height: 200px;
+align-items: flex-start;  
+background-color:skyblue;
+}
+.fo2>div {
+background-color: grey;
+width: 100px;
+margin: 10px;
+text-align: center;
+line-height: 75px;
+font-size: 30px;
+}
+.fo3 {
+display: flex;
+height: 200px;
+align-items: flex-end;  
+background-color:skyblue;
+}
+.fo3>div {
+background-color: grey;
+width: 100px;
+margin: 10px;
+text-align: center;
+line-height: 75px;
+font-size: 30px;
+}
+.fo4 {
+display: flex;
+height: 200px;
+align-items: stretch;  
+background-color:skyblue;
+}
+.fo4>div {
+background-color: grey;
+width: 100px;
+margin: 10px;
+text-align: center;
+line-height: 75px;
+font-size: 30px;
+}
+.fo5 {
+display: flex;
+height: 200px;
+align-items: baseline;  /*align according to the element size*/
+background-color:skyblue;
+}
+.fo5>div {
+background-color: grey;
+width: 100px;
+margin: 10px;
+text-align: center;
+line-height: 75px;
+font-size: 30px;
+}
+.fo6 {
+display: flex;
+height: 600px;
+flex-wrap: wrap;
+align-content: space-between;  
+background-color:skyblue;
+}
+.fo6>div {
+background-color: grey;
+width: 100px;
+margin: 10px;
+text-align: center;
+line-height: 75px;
+font-size: 30px;
+}
+.fo7 {
+display: flex;
+height: 600px;
+flex-wrap: wrap;
+align-content: space-around;  
+background-color:skyblue;
+}
+.fo7>div {
+background-color: grey;
+width: 100px;
+margin: 10px;
+text-align: center;
+line-height: 75px;
+font-size: 30px;
+}
+.fo8 {
+display: flex;
+height: 600px;
+flex-wrap: wrap;
+align-content: flex-start;  
+background-color:skyblue;
+}
+.fo8>div {
+background-color: grey;
+width: 100px;
+margin: 10px;
+text-align: center;
+line-height: 75px;
+font-size: 30px;
+}
+.fo9 {
+display: flex;
+height: 600px;
+flex-wrap: wrap;
+align-content: flex-end;  
+background-color:skyblue;
+}
+.fo9>div {
+background-color: grey;
+width: 100px;
+margin: 10px;
+text-align: center;
+line-height: 75px;
+font-size: 30px;
+}
+.fo10 {
+display: flex;
+height: 600px;
+flex-wrap: wrap;
+align-content: center;  
+background-color:skyblue;
+}
+.fo10>div {
+background-color: grey;
+width: 100px;
+margin: 10px;
+text-align: center;
+line-height: 75px;
+font-size: 30px;
+}
+.fi1 {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 300px;
+background-color: green;
+}
+.fi1>div {
+background-color: white;
+color: brown;
+width: 100px;
+height: 100px;
+}
+.fi2 {
+display: flex;
+background-color: grey;
+}
+.fi2>div {
+background-color: black;
+color: white;
+width: 100px;
+margin: 10px;
+text-align: center;
+line-height: 75px;
+font-size: 30px;
+}
+.fi3 {
+display: flex;
+height: 200px;
+background-color: brown;
+}
+.fi3>div {
+background-color: yellow;
+color: blue;
+width: 100px;
+margin: 10px;
+text-align: center;
+line-height: 75px;
+font-size: 30px;
+}
+</style>
+</head>
+<body>
+<p>flex box</p>
+<br>
+<div class="one">
+<div>1</div>
+<div>2</div>
+<div>3</div>
+</div>
+<p>Flex box contained parent should contains the display with the flex value</p>
+<br><br><br>
+<p>Flex direction</p>
+<br>
+<div class="two">
+<div>1</div>
+<div>2</div>
+<div>3</div>
+</div>
+<br><br><br>
+<p>Flex direction reverse</p>
+<br>
+<div class="three">
+<div>1</div>
+<div>2</div>
+<div>3</div>
+</div>
+<br><br><br>
+<p>Flex direction row</p>
+<br>
+<div class="four">
+<div>1</div>
+<div>2</div>
+<div>3</div>
+</div>
+<br><br><br>
+<p>Flex direction row reverse</p>
+<br>
+<div class="five">
+<div>1</div>
+<div>2</div>
+<div>3</div>
+</div>
+<br><br><br>
+<p>Flex wrap - change the screen size</p>
+<br>
+<div class="six">
+<div>1</div>
+<div>2</div>
+<div>3</div>
+<div>4</div>
+<div>5</div>
+<div>6</div>
+<div>7</div>
+<div>8</div>
+<div>9</div>
+<div>10</div>
+<div>11</div>
+<div>12</div>
+</div>
+<br><br><br>
+<p>Flex wrap-reverse</p>
+<br>
+<div class="seven">
+<div>1</div>
+<div>2</div>
+<div>3</div>
+<div>4</div>
+<div>5</div>
+<div>6</div>
+<div>7</div>
+<div>8</div>
+<div>9</div>
+<div>10</div>
+<div>11</div>
+<div>12</div>
+</div>
+<br><br><br>
+<p>Flex flex-flow</p>
+<br>
+<div class="eight">
+<div>1</div>
+<div>2</div>
+<div>3</div>
+<div>4</div>
+<div>5</div>
+<div>6</div>
+<div>7</div>
+<div>8</div>
+<div>9</div>
+<div>10</div>
+<div>11</div>
+<div>12</div>
+</div>
+<br><br><br>
+<p>Flex justify-content center</p>
+<br>
+<div class="nine">
+<div>1</div>
+<div>2</div>
+<div>3</div>
+</div>
+<br><br><br>
+<p>Flex justify-content flex start</p>
+<br>
+<div class="ten">
+<div>1</div>
+<div>2</div>
+<div>3</div>
+</div>
+<br><br><br>
+<p>Flex justify-content flex end</p>
+<br>
+<div class="eleven">
+<div>1</div>
+<div>2</div>
+<div>3</div>
+</div>
+<br><br><br>
+<p>Flex justify-content space around</p>
+<br>
+<div class="tew">
+<div>1</div>
+<div>2</div>
+<div>3</div>
+</div>
+<br><br><br>
+<p>Flex justify-content space between</p>
+<br>
+<div class="thir">
+<div>1</div>
+<div>2</div>
+<div>3</div>
+</div>
+<br><br><br>
+<p>align-items center</p>
+<br>
+<div class="fo1">
+<div>1</div>
+<div>2</div>
+<div>3</div>
+</div>
+<br><br><br>
+<p>align-items flex-start</p>
+<br>
+<div class="fo2">
+<div>1</div>
+<div>2</div>
+<div>3</div>
+</div>
+<br><br><br>
+<p>align-items flex-end</p>
+<br>
+<div class="fo3">
+<div>1</div>
+<div>2</div>
+<div>3</div>
+</div>
+<br><br><br>
+<p>align-items stretch</p>
+<br>
+<div class="fo4">
+<div>1</div>
+<div>2</div>
+<div>3</div>
+</div>
+<br><br><br>
+<p>align-items baseline</p>
+<br>
+<div class="fo5">
+<div><h2>1</h2></div>
+<div><h6>2</h6></div>
+<div><h1>3</h1></div>
+<div><h7>4</h7></div>
+<div><h3>5</h3></div>
+</div>
+<br><br><br>
+<p>Flex align-content space-between</p>
+<br>
+<div class="fo6">
+<div>1</div>
+<div>2</div>
+<div>3</div>
+<div>4</div>
+<div>5</div>
+<div>6</div>
+<div>7</div>
+<div>8</div>
+<div>9</div>
+<div>10</div>
+<div>11</div>
+<div>12</div>
+</div>
+<br><br><br>
+<p>Flex align-content space-around</p>
+<br>
+<div class="fo7">
+<div>1</div>
+<div>2</div>
+<div>3</div>
+<div>4</div>
+<div>5</div>
+<div>6</div>
+<div>7</div>
+<div>8</div>
+<div>9</div>
+<div>10</div>
+<div>11</div>
+<div>12</div>
+</div>
+<br><br><br>
+<p>Flex align-content flex-start</p>
+<br>
+<div class="fo8">
+<div>1</div>
+<div>2</div>
+<div>3</div>
+<div>4</div>
+<div>5</div>
+<div>6</div>
+<div>7</div>
+<div>8</div>
+<div>9</div>
+<div>10</div>
+<div>11</div>
+<div>12</div>
+</div>
+<br><br><br>
+<p>Flex align-content flex-end</p>
+<br>
+<div class="fo9">
+<div>1</div>
+<div>2</div>
+<div>3</div>
+<div>4</div>
+<div>5</div>
+<div>6</div>
+<div>7</div>
+<div>8</div>
+<div>9</div>
+<div>10</div>
+<div>11</div>
+<div>12</div>
+</div>
+<br><br><br>
+<p>Flex align-content center</p>
+<br>
+<div class="fo10">
+<div>1</div>
+<div>2</div>
+<div>3</div>
+<div>4</div>
+<div>5</div>
+<div>6</div>
+<div>7</div>
+<div>8</div>
+<div>9</div>
+<div>10</div>
+<div>11</div>
+<div>12</div>
+</div>
+<br><br><br>
+<p>Perfect center</p>
+<div class="fi1">
+<div></div>
+</div>
+<br><br><br>
+<p>all children of the flex element will be flexible items</p>
+<div class="fi2">
+<div>1</div>
+<div>2</div>
+<div>3</div>
+</div>
+<br><br><br>
+<h3>flex properties for the child element</h3>
+<p>order</p>
+<div class="fi2">
+<div style="order: 3">1</div>
+<div style="order: 2">2</div>
+<div style="order: 4">3</div>
+<div style="order: 1">4</div>
+</div>
+<br><br><br>
+<p>flex-grow</p>
+<div class="fi2">
+<div style="flex-grow: 0">1</div>
+<div style="flex-grow: 1">2</div>
+<div style="flex-grow: 0">3</div>
+<div style="flex-grow: 3">4</div>
+</div>
+<br><br><br>
+<p>flex-shrink</p>
+<div class="fi2">
+<div>1</div>
+<div>2</div>
+<div>3</div>
+<div style="flex-shrink: 0">4</div>
+<div>5</div>
+<div>6</div>
+<div>7</div>
+<div>8</div>
+<div>9</div>
+<div>10</div>
+<div>11</div>
+<div>12</div>
+</div>
+<br><br><br>
+<p>flex-basis</p>
+<div class="fi2">
+<div>1</div>
+<div>2</div>
+<div>3</div>
+<div style="flex-basis: 200px">4</div>
+<div>5</div>
+<div>6</div>
+</div>
+<br><br><br>
+<p>flex it is shorthand property of flex-grow, flex-shrink and flex-basis</p>
+<div class="fi2">
+<div>1</div>
+<div>2</div>
+<div>3</div>
+<div style="flex: 0 0 200px">4</div>
+<div>5</div>
+</div>
+<br><br><br>
+<p>align-self center</p>
+<div class="fi3">
+<div>1</div>
+<div>2</div>
+<div style="align-self: center">3</div>
+<div>4</div>
+</div>
+<br><br><br>
+<p>align-self flex-start flex-end</p>
+<div class="fi3">
+<div>1</div>
+<div style="align-self: flex-start">2</div>
+<div style="align-self: flex-end">3</div>
+<div>4</div>
+<div>5</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+input:checked {
+height: 30px;
+width: 30px;
+}
+input[type=text]:enabled {
+background-color: lightgreen;
+}
+input:in-range {
+background-color: yellow;
+border:2px solid red;
+}
+input:out-of-range {
+background-color: black;
+border:2px solid white;
+color: white;
+}
+input[type=text]:disabled {
+background-color: grey;
+}
+input:invalid {
+background-color: orange;
+}
+p:first-of-type {
+color: green;
+}
+</style>
+</head>
+<body>
+<form>
+Select gender:<br>
+<input type="radio" name="one" value="male">Male<br>
+<input type="radio" name="one" value="female">Female<br>
+<br>
+Vechile:<br>
+<input type="checkbox" name="two" value="car">Car<br>
+<input type="checkbox" name="two" value="Bike">Bike<br>
+<br>
+Enter your name:<br>
+<input type="text" name="nm" value="your name"><br>
+Enter college:<br>
+<input type="text" name="cl" disabled="disabled" value="PET"><br>
+<br>
+<br>Enter the age: (your age should be 18 to 28):<br>
+<input type="number" min="18" max="28"><br>
+<br>
+<br>
+Enter Email:<br>
+<input type="email" name="mail"><br>
+</form>
+<hr>
+<br>
+<p>This is first child</p>
+<p>This is second para</p>
+</body>
+</html>

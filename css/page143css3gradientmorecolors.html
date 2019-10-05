@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.one {
+height: 200px;
+background: -webkit-linear-gradient(red, yellow, green, blue, violet, brown, grey);
+background: -o-linear-gradient(red, yellow, green, blue, violet, brown, grey);
+background: -moz-linear-gradient(red, yellow, green, blue, violet, brown, grey);
+background: linear-gradient(red, yellow, green, blue, violet, brown, grey);
+}
+.two {
+height: 200px;
+background: -webkit-linear-gradient(red 10%, yellow 80%, green 90%);
+background: -o-linear-gradient(red 10%, yellow 80%, green 90%);
+background: -moz-linear-gradient(red 10%, yellow 80%, green 90%);
+background: linear-gradient(red 10%, yellow 80%, green 90%);
+}
+.three {
+height: 55px;
+background: -webkit-linear-gradient(left, red, cyan, brown, yellow, blue, green);
+background: -o-linear-gradient(right, red, cyan, brown, yellow, blue, green);
+background: -moz-linear-gradient(right, red, cyan, brown, yellow, blue, green);
+background: -linear-gradient(to right, red, cyan, brown, yellow, blue, green); /*standard sydax must be last*/
+}
+#four {
+height: 150px;
+background: -webkit-linear-gradient(left,rgba(255,0,0,0),rgba(255,0,0,1));
+background: -o-linear-gradient(right,rgba(255,0,0,0),rgba(255,0,0,1));
+background: -moz-linear-gradient(right,rgba(255,0,0,0),rgba(255,0,0,1));
+background: linear-gradient(right,rgba(255,0,0,0),rgba(255,0,0,1));
+}
+#five {
+height: 150px;
+background: -webit-repeating-linear-gradient(red, yellow 10%, blue 20%);
+background: -o-repeating-linear-gradient(red, yellow 10%, blue 20%);
+background: -moz-repeating-linear-gradient(red, yellow 10%, blue 20%);
+background: repeating-linear-gradient(red, yellow 10%, blue 20%);
+}
+#six {
+height: 150px;
+background: -webit-repeating-linear-gradient(45deg,red, yellow 7%, blue 10%);
+background: -o-repeating-linear-gradient(45deg,red, yellow 7%, blue 10%);
+background: -moz-repeating-linear-gradient(45deg,red, yellow 7%, blue 10%);
+background: repeating-linear-gradient(45deg,red, yellow 7%, blue 10%);
+}
+#seven {
+height: 150px;
+background: -webit-repeating-linear-gradient(90deg,red, yellow 7%, blue 10%);
+background: -o-repeating-linear-gradient(90deg,red, yellow 7%, blue 10%);
+background: -moz-repeating-linear-gradient(90deg,red, yellow 7%, blue 10%);
+background: repeating-linear-gradient(90deg,red, yellow 7%, blue 10%);
+}
+</style>
+</head>
+<body>
+<div class="one">
+<p>This is paragraph</p>
+</div>
+<div class="two">
+<p>This is paragraph</p>
+</div>
+<br>
+<br>
+<div class="three" style="text-align:center;margin:auto;color:grey;font-size:40px;font-weight:bold">
+<p>Gradient Background</p>
+</div>
+<br>
+<div id="four">
+<p>using transparency</p>
+</div>
+<br>
+<div id="five">
+<p>using repeating</p>
+</div>
+<div id="six">
+<p>using repeating</p>
+</div>
+<br>
+<div id="seven">
+<p>using repeating</p>
+</div>
+</body>
+</html>

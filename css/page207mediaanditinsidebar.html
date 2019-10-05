@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#nav {
+list-style-type: none;
+}
+#nav li a {
+color: orange;
+text-decoration: none;
+padding: 3px;
+display: block;
+}
+#nav {
+width: 35%;
+float: left;
+}
+@media screen and (max-width: 699px) and (min-width: 520px), (min-width: 1151px) {
+#nav li a {
+padding-left: 30px;
+background: url(mail.png) left center no-repeat;
+}
+}
+
+@media screen and (max-width: 1000px) and (min-width: 700px) {
+#nav li a:before {
+content: "Email: ";
+font-style: italic;
+color: blue;
+}
+}
+@media screen and (min-width: 1001px) {
+#nav li a:after {
+content: " (" attr(data-email) ") ";
+font-size: 12px;
+font-size: italic;
+color: brown;
+}
+}
+</style>
+</head>
+<body>
+<p>change the screen size</p>
+
+<ul id="nav">
+<li><a data-email="ram@example.com" href="mailto:ram@example.com">Ram</a></li>
+<li><a data-email="jhon@example.com" href="mailto:jhon@example.com">Jhon</a></li>
+<li><a data-email="kumar@example.com" href="mailto:kumar@example.com">Kumar</a></li>
+</ul>
+
+<div id="main">
+<p>This is a pragraph. This is a pragraph. This is a pragraph. This is a pragraph. This is a pragraph. This is a pragraph. This is a pragraph. This is a pragraph. This is a pragraph. This is a pragraph. This is a pragraph. This is a pragraph. This is a pragraph. This is a pragraph. This is a pragraph. This is a pragraph. This is a pragraph. This is a pragraph. This is a pragraph. This is a pragraph. This is a pragraph. This is a pragraph. This is a pragraph. This is a pragraph. This is a pragraph. This is a pragraph. This is a pragraph. This is a pragraph. This is a pragraph. This is a pragraph. This is a pragraph. This is a pragraph. This is a pragraph. This is a pragraph. This is a pragraph. This is a pragraph. This is a pragraph. This is a pragraph. This is a pragraph. This is a pragraph. This is a pragraph. This is a pragraph. This is a pragraph. </p>
+</div>
+</body>
+</html>

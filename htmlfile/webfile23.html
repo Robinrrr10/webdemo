@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Media</title>
+</head>
+<body>
+<h3>This is the video</h3>
+<video width="250" height="250" controls>
+ <source src="myvid.mp4" type="video/mp4">
+ <source src="myvid.ogg" type="video/ogg">
+Video is will not support in your browser
+</video>
+<p>Next video</p>
+<br>
+<video width="250" height="250" autoplay>
+ <source src="myvid.mp4" type="video/mp4">
+ <source src="myvid.ogg" type="video/ogg"> 
+Video is will not support in your browser
+</video>
+<br><br>
+<div style="text-align:center">
+ <button onclick="playpause()">Play/Pause</button>
+ <button onclick="big()">Big size</button>
+ <button onclick="small()">Smallsize</button>
+ <button onclick="normal()">Normal size"</button>
+ <br><br>
+ <video id="vid1" width="300">
+  <source src="myvid.mp4" type="video/mp4">
+  <source src="myvid.ogg" type="video/ogg">
+ Video will not support in this browser
+ </video>
+</div>
+
+<script> 
+var myvideo = document.getElementById("vid1");
+ 
+function playpause() {
+ if (myvideo.paused)
+     myvideo.play();
+ else
+     myvideo.pause();
+}
+
+function big() {
+ myvideo.width = 400;
+}
+
+function small() {
+myvideo.width = 250;
+}
+
+function normal() {
+myvideo.width = 300;
+}
+
+</script>
+
+
+</body>
+</html>

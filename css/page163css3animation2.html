@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.one {
+width: 100px;
+height: 100px;
+background-color: red;
+position: relative;     
+-webkit-animation-name: onee;
+-webkit-animation-duration: 10s;
+animation-name: onee;
+animation-duration: 10s;
+}
+@-webkit-keyframes onee {
+0% {background-color: red; left: 0px; top: 0px;}
+25%{background-color: yellow; left: 300px; top: 0px;}
+50%{background-color: green; left: 300px; top: 300px;}
+75%{background-color: blue; left: 0px; top: 300px;}
+100%{background-color: brown; left: 0px; top: 0px;}
+}
+@keyframes onee {
+0% {background-color: red; left: 0px; top: 0px;}
+25%{background-color: yellow; left: 300px; top: 0px;}
+50%{background-color: green; left: 300px; top: 300px;}
+75%{background-color: blue; left: 0px; top: 300px;}
+100%{background-color: brown; left: 0px; top: 0px;}
+}
+.two {
+width: 100px;
+height: 100px;
+background-color: red;
+position: relative;     
+-webkit-animation-name: twoo;
+-webkit-animation-duration: 10s;
+-webkit-animation-delay: 2s;
+animation-name: twoo;
+animation-duration: 10s;
+animation-delay: 2s;
+}
+@-webkit-keyframes twoo {
+0% {background-color: red; left: 0px; top: 0px;}
+25%{background-color: yellow; left: 300px; top: 0px;}
+50%{background-color: green; left: 300px; top: 300px;}
+75%{background-color: blue; left: 0px; top: 300px;}
+100%{background-color: brown; left: 0px; top: 0px;}
+}
+@keyframes twoo {
+0% {background-color: red; left: 0px; top: 0px;}
+25%{background-color: yellow; left: 300px; top: 0px;}
+50%{background-color: green; left: 300px; top: 300px;}
+75%{background-color: blue; left: 0px; top: 300px;}
+100%{background-color: brown; left: 0px; top: 0px;}
+}
+</style>
+</head>
+<body>
+<div class="one">
+</div>
+<br>
+<br>
+<div class="two">
+</div>
+</body>
+</html>

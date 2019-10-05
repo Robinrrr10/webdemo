@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.one {
+height: 300px;
+background: red;   /*this is for browser which will not support gradient*/
+background: -webkit-linear-gradient(red, yellow); /*for chrome and safari*/
+background: -o-linear-gradient(red, yellow); /*for opera*/
+background: -moz-linear-gradient(red, yellow); /*for mozila firebox*/
+background: linear-gradient(red, yellow); /*this is standard syntax*/
+}
+.two {
+height: 300px;
+background: red;   /*this is for browser which will not support gradient*/
+background: -webkit-linear-gradient(left, red, yellow); /*for chrome and safari*/
+background: -o-linear-gradient(right, red, yellow); /*for opera*/
+background: -moz-linear-gradient(right, red, yellow); /*for mozila firebox*/
+background: linear-gradient(to right, red, yellow); /*this is standard syntax*/
+}
+.three {
+height: 300px;
+background: red;   /*this is for browser which will not support gradient*/
+background: -webkit-linear-gradient(left top, red, yellow); /*for chrome and safari*/ /*here side direction is opposite in webkit*/
+background: -o-linear-gradient(bottom right, red, yellow); /*for opera*/
+background: -moz-linear-gradient(bottom right, red, yellow); /*for mozila firebox*/
+background: linear-gradient(to bottom right, red, yellow); /*this is standard syntax*/
+}
+.four {
+height: 300px;
+background: red;   /*this is for browser which will not support gradient*/
+background: -webkit-linear-gradient(0deg, red, yellow); /*for chrome and safari*/ /*here side direction is opposite in webkit*/
+background: -o-linear-gradient(0deg, red, yellow); /*for opera*/
+background: -moz-linear-gradient(0deg, red, yellow); /*for mozila firebox*/
+background: linear-gradient(0deg, red, yellow); /*this is standard syntax*/
+}
+.five {
+height: 300px;
+background: red;   /*this is for browser which will not support gradient*/
+background: -webkit-linear-gradient(90deg, red, yellow); /*for chrome and safari*/ /*here side direction is opposite in webkit*/
+background: -o-linear-gradient(90deg, red, yellow); /*for opera*/
+background: -moz-linear-gradient(90deg, red, yellow); /*for mozila firebox*/
+background: linear-gradient(90deg, red, yellow); /*this is standard syntax*/
+}
+.six {
+height: 300px;
+background: red;   /*this is for browser which will not support gradient*/
+background: -webkit-linear-gradient(-90deg, red, yellow); /*for chrome and safari*/ /*here side direction is opposite in webkit*/
+background: -o-linear-gradient(-90deg, red, yellow); /*for opera*/
+background: -moz-linear-gradient(-90deg, red, yellow); /*for mozila firebox*/
+background: linear-gradient(-90deg, red, yellow); /*this is standard syntax*/
+}
+.seven {
+height: 300px;
+background: red;   /*this is for browser which will not support gradient*/
+background: -webkit-linear-gradient(180deg, red, yellow); /*for chrome and safari*/ /*here side direction is opposite in webkit*/
+background: -o-linear-gradient(180deg, red, yellow); /*for opera*/
+background: -moz-linear-gradient(180deg, red, yellow); /*for mozila firebox*/
+background: linear-gradient(180deg, red, yellow); /*this is standard syntax*/
+}
+</style>
+</head>
+<body>
+<div class="one">
+<p>This contain gradients</p>
+</div>
+<br>
+<div class="two">
+<p>This contain gradients</p>
+</div>
+<br>
+<div class="three">
+<p>This contain gradients</p>
+</div>
+<br>
+<div class="four">
+<p>This contain gradients</p>
+</div>
+<br>
+<div class="five">
+<p>This contain gradients</p>
+</div>
+<br>
+<div class="six">
+<p>This contain gradients</p>
+</div>
+<br>
+<div class="seven">
+<p>This contain gradients</p>
+</div>
+<br>
+</body>
+</html>

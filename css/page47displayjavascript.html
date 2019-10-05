@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#two, .one {
+background-color: grey;
+color: red;
+padding: 20px;
+text-align: center;
+border: 2px solid green;
+margin: auto;
+}
+
+#two {
+display: none;
+}
+</style>
+</head>
+<body>
+<p class="one" onclick="myFunction()">Click here to view the below content</p>
+<p id="two">This is the below paragraph which open after clicking the above<br>This is the below paragraph</p>
+<script>
+function myFunction() {
+ document.getElementById("two").style.display = "block";
+}
+</script>
+</body>
+</html>

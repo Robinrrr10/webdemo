@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+width: 100px;
+height: 75px;
+position: relative;
+background-color: red;
+-webkit-animation: onee 5s infinite;
+animation: onee 5s infinite;
+}
+#one {-webkit-animation-timing-function: linear;}
+#two {-webkit-animation-timing-function: ease;}
+#three {-webkit-animation-timing-function: ease-in;}
+#four {-webkit-animation-timing-function: ease-out;}
+#five {-webkit-animation-timing-function: ease-in-out;}
+#one {animation-timing-function: linear;}
+#two {animation-timing-function: ease;}
+#three {animation-timing-function: ease-in;}
+#four {animation-timing-function: ease-out;}
+#five {animation-timing-function: ease-in-out;}
+@-webkit-keyframes onee {
+from {left: 0px;}
+to {left: 300px;}
+}
+@keyframes onee {
+from {left: 0px;}
+to {left: 300px;}
+}
+</style>
+</head>
+<body>
+<div id="one">
+</div>
+<div id="two">
+</div>
+<div id="three">
+</div>
+<div id="four">
+</div>
+<div id="five">
+</div>
+</body>
+</html>

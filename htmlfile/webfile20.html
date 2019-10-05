@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>graphics html page</title>
+</head>
+<body>
+<canvas id="myCanvas" width="200" height="150" style="border:1px solid #0000ff;">
+Your browser does not support canvas
+</canvas>
+
+<script>
+var a = document.getElementById("myCanvas");
+var abc = a.getContext("2d");
+abc.moveTo(0,0);
+abc.lineTo(200,150)
+abc.stroke();
+</script>
+<br>
+<br>
+<br>
+<canvas id="myCanvas2" width="300" height="230" style="border:2px dotted grey;">
+your browser does not support canvas
+</canvas>
+<script>
+var c = document.getElementById("myCanvas2");
+var ctx = c.getContext("2d");
+ctx.beginPath();
+ctx.arc(150,115,70,0,2*Math.PI);
+ctx.stroke();
+</script>
+<br>
+<br>
+<br>
+<canvas id="myCanvas3" width="250" height="200" style="border:2px Dashed rgb(255,0,0);">
+your browser does not support canvas
+</canvas>
+<script>
+var c = document.getElementById("myCanvas3");
+var ctx = c.getContext("2d");
+ctx.font = "15px Arial";
+ctx.fillText("Hello Every One",75,100);
+</script>
+<br>
+<br>
+<br>
+<canvas id="myCanvas4" width="450" height="350" style="border:2px solid rgb(0,255,0);">
+your browser does not support canvas
+</canvas>
+<script>
+var c = document.getElementById("myCanvas4");
+var ctx = c.getContext("2d");
+ctx.font = "30px Arial";
+ctx.strokeText("Hai Hai Hai",200,150);
+</script>
+<br>
+<br>
+<br>
+<canvas id="myCanvas5" width="200" height="100" style="border:2px solid #eeeeee;">
+your browser does not support canvas
+</canvas>
+<script>
+var c = document.getElementById("myCanvas5");
+var ctx = c.getContext("2d");
+//create gradient is below
+var grd = ctx.createLinearGradient(0,0,150,0);
+grd.addColorStop(0,"blue");
+grd.addColorStop(1,"red");
+// fill with gradient is below
+ctx.fillStyle = grd;
+ctx.fillRect(12,12,145,70);
+</script>
+<br>
+<br>
+<br>
+<canvas id="myCanvas6" width="250" height="150" style="border:3px solid #ffff00;">
+your browser does not support canvas
+</canvas>
+<script>
+var c = document.getElementById("myCanvas6");
+var ctx = c.getContext("2d");
+//create gradient is below
+var grd = ctx.createRadialGradient(75,50,5,90,60,90);
+grd.addColorStop(0,"blue");
+grd.addColorStop(1,"white");
+// fill with gradient is below
+ctx.fillStyle = grd;
+ctx.fillRect(10,10,150,80);
+</script>
+<br>
+<br>
+<br>
+<p>Image to use:</p>
+<img id="scream" src="image2.jpg" alt="no image" width="400" height="300">
+<p>Canvas to fill:</p>
+<canvas id="mycanvas7" width="400" height="300" style="border:1px solid black;">
+your browser does not support canvas
+</canvas>
+<p><button onclick="mycanvase()">Try it</button></p>
+<script>
+function mycanvase() {
+var c = document.getElementById("mycanvas7");
+var ctx = c.getContext("2d");
+var img = document.getElementById("scream");
+ctx.drawImage(img,80,80);
+}
+</script>
+</body>
+</html>

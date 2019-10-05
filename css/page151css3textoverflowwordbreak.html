@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.one {
+white-space: nowrap;
+width: 300px;
+border: 1px solid black;
+overflow: hidden;
+text-overflow: clip;
+}
+.two {
+white-space: nowrap;
+width: 300px;
+border: 1px solid black;
+overflow: hidden;
+text-overflow: ellipsis;
+}
+.three {
+white-space: nowrap;
+width: 300px;
+border: 1px solid black;
+overflow: hidden;
+}
+.three:hover {
+text-overflow: inherit;
+overflow: visible;
+}
+.four {
+width: 200px;
+border: 1px solid #000000;
+word-wrap: break-word;
+/*Used to break the long word*/
+}
+.five {
+width: 200px;
+border: 1px solid #000000;
+word-break: keep-all;
+}
+.six {
+width: 200px;
+border: 1px solid #000000;
+word-break: break-all;
+}
+div.seven {
+text-align: justify;
+-moz-text-align-last: right;
+text-align-last: right;
+}
+div.eight {
+text-align: justify;
+text-justify: inner-word;
+}
+</style>
+</head>
+<body>
+<p class="one">This is a paragraph. This is a pragraph. This is a paragraph. This is a pragraph</p>
+<br>
+<p class="two">This is a paragraph. this is a pragraph. This is a paragraph. This is a pragraph</p>
+<br>
+<p class="three" style="text-overflow:ellipsis;">This is a paragraph. this is a pragraph. This is a paragraph. This is a pragraph</p>
+<br>
+<p class="three" style="text-overflow:clip;">This is a paragraph. this is a pragraph. This is a paragraph. This is a pragraph</p>
+<br>
+<p class="four">This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragdfafaasfdafadsfdaffafafafasdraph. This is a paragraph. This is a paragraph. This is a paragraph. </p>
+<br>
+<p class="five">This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragdf This is a parfafadfaagraph. Thafafafafafafafafsaafsfaf is is a paragraph. This is a paragraph. </p>
+<br>
+<p class="six">This is a paragraph. This is a parfadfafagraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragdf This is a paragraph. Tafafaaffafafafafaasahis is a paragdraph. This is a paragraph. </p>
+<br>
+<div class="seven">
+This is a paragraph. This is a parfadfafagraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragdf This is a paragraph. Tafafaaffafafafafaasahis is a paragdraph. This is a paragraph.This is a paragraph. This is a parfadfafagraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragdf This is a paragraph. Tafafaaffafafafafaasahis is a paragdraph. This is a paragraph.This is a paragraph. This is a parfadfafagraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragdf This is a paragraph. Tafafaaffafafafafaasahis is a paragdraph. This is a paragraph.This is a paragraph. This is a parfadfafagraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragdf This is a paragraph. Tafafaaffafafafafaasahis is a paragdraph. This is a paragraph.This is a paragraph. This is a parfadfafagraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragdf This is a paragraph. Tafafaaffafafafafaasahis is a paragdraph. This is a paragraph.
+</div>
+<br>
+<br>
+<div class="eight">
+This is a paragraph. This is a parfadfafagraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragdf This is a paragraph. Tafafaaffafafafafaasahis is a paragdraph. This is a paragraph.This is a paragraph. This is a parfadfafagraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragdf This is a paragraph. Tafafaaffafafafafaasahis is a paragdraph. This is a paragraph.This is a paragraph. This is a parfadfafagraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragdf This is a paragraph. Tafafaaffafafafafaasahis is a paragdraph. This is a paragraph.This is a paragraph. This is a parfadfafagraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragdf This is a paragraph. Tafafaaffafafafafaasahis is a paragdraph. This is a paragraph.This is a paragraph. This is a parfadfafagraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragdf This is a paragraph. Tafafaaffafafafafaasahis is a paragdraph. This is a paragraph.
+</div>
+</body>
+</html>

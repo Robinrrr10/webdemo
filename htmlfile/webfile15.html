@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>attribute</title>
+</head>
+<body>
+<p>image</p>
+<form>
+First Name<br>
+<input type="text" name="name"><br>
+<input type="image" src="image2.jpg" alt="no image" width="140" height="90">
+<br>
+Enter which browser you are using now:<br>
+<input list="brow" name="brow">
+<datalist id="brow">
+ <option value="Opera">
+ <option value="Internet EXP">
+ <option value="Safari">
+</datalist>
+<br>
+<br>
+Enter date<br>
+<input type="date" name="bday" max="2017-02-28" min="1991-01-01">
+<br>
+Enter the age<br>
+<input type="number" name="age" min="10" max="28"><br>
+Choose the file<br>
+<input type="file" name="onefile"><br>
+Choose more file
+<input type="file" name="morefile" multiple>
+<input type="submit" value="done"><br>
+</form>
+<form>
+<br>
+<br>
+Enter number related to 5: <br>
+<input type="number" name="three" step="5"><b>
+<b>
+<input type="submit">
+</form>
+<form>
+<br>
+Enter your name<br>
+<input type="text" name="yname" placeholder="Enter your name"><br>
+Enter your idname<br>
+<input type="text" name="idname" required><br>
+Enter country code:
+<input type="text" name="countrycode" pattern="[A-Za-z]{3}" title="you can enter only three character alphapet"><br>
+<input type="Submit" value="ok">
+</form>
+</body>
+</html>

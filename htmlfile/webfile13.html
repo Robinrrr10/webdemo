@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>form page</title>
+</head>
+<body>
+<form>
+<!--form action="/action_page.php"  action is used to specify the address(url) where submit the form-->
+<!-- form action="file.php" method="get" we can use post instread of get for sencitive date-->
+</form>
+<form>
+Google search:<br>
+<input type="search" name="googlesearch"><br>
+<input type="tel" name="usrtel"><br>
+<!-- tel telephone number is supported only in the safari. other browser will not support-->
+Select time:<br>
+<input type="time" name="tt"><br>
+Enter your URL:<br>
+<input type="url" name="ur">
+Enter the week no:<br>
+<input type="week" name="wk"><br>
+<input type="submit" name="submit"><br>
+
+</form>
+<form>
+<fieldset>
+ <legend>type your name here</legend>
+First Name:<br>
+<input type="text" name="first name">
+<br>
+Second Name:<br>
+<input type="text" name="second name">
+<br>
+</fieldset>
+Say about your self:<br>
+<textarea name="message" rows=20 cols="50"></textarea>
+<br>
+Work:<br>
+<input text="text" name="work" value="Kirusa">
+<br>
+Which mobile brand you are using:<br>
+<select name="mobile">
+ <option value="iphone">Iphone</option>
+ <option value="Samsung">Samsung</option>
+ <option value="Mi" selected>Mi</option>
+ <option value="Nokia">Nokia</option
+</select>
+<br><br>
+<input type="submit">
+<br>
+<p><br>Select the gender:<br></p>
+<input type="radio" name="gender" value="male" checked>Male<br>
+<input type="radio" name="gender" value="female">Female<br>
+<input type="radio" name="gender" value="other">Other<br>
+<input type="submit" name="submit">
+</form>
+<p>Above is the form</p>
+<br>
+<form>
+<input list="mylist" name="mylist">
+<datalist id="mylist">
+<option value="Lions">
+<option value="Tiger">
+<option value="cat">
+</datalist>
+<input type="submit">
+</form>
+<br>
+<form>
+username:<input type="text" name="username">
+<br><br>
+encryption: <keygen name="security">
+<br><br>
+<input type="submit">
+</form>
+<br>
+<form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+0
+<input type="range" id="a" name="a" value="60">
+100 +
+<input type="number" id="b" name="b" value="40">
+=
+<output name="x" for="a b"></output>
+</form>
+<br>
+<button type="button" onclick="alert('Hai all')">click here</button>
+<br>
+<form>
+User name: <br>
+<input type="text" name="username" value="admin"><br>
+Enter password:<br>
+<input type="password" name="passwo"><br>
+<br>
+<input type="submit" value="Done">
+<br>
+<br><input type="reset">
+</form>
+<form>
+Select any one:<br>
+<input type="radio" name="all" value="first person">first person<br>
+<input type="radio" name="all" value="second person">second person<br>
+<br>
+Select any one color:<br>
+<input type="radio" name="ala" value="Green">Green<br>
+<input type="radio" name="ala" value="Red">Red<br>
+<br>
+Education:<br>
+<input type="checkbox" name="edu" value="school">school <input type="checkbox" name="edu" value="ug"> UG <input type="checkbox" name="edu" value="pg"> PG <br>
+</form>
+<br>
+<form>
+<input type="button" onclick="alert('Hello ok')" value="Click me">
+<br>
+Birthday:<br>
+<input type="date" name="bdate">
+<br>
+Minimum and maximum date:<br>
+<input type="date" name="minmax" min="1991-12-31" max="2015-12-29">
+<br>
+datetime local:<br>
+<input type="datetime-local" name="datetimeee:>
+<br>
+<input type="color" name="color" value="#0000ff">
+<br>
+Email:<br>
+<input type="email" name="email"><br>
+<input type="submit">
+<br>
+</form>
+<form>
+Birthday:<br>
+<input type="month" name="btday"><br>
+Enter your age:<br>
+<input type="number" name="aga" min="18" max="30"><br>
+Enter your name:<br>
+<input type="text" maxlength="7"><br>
+Enter your name:<br>
+<input type="text" value="Enter here"><br>
+<input type="range" name="points" min="10" max="100><br>
+<br>
+</form>
+</body>
+</html>

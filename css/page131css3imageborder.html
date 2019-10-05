@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/*for chrome and safari use -webkit- , for opera use -o-, for mozila use -moz-*/
+#one {
+border: 10px solid transparent;   /*first we have to declare the border*/
+padding: 15px;
+-webkit-border-image: url(border.png) 30 round; /*here -webkit- is for chrome and safari*/
+-o-border-image: url(border.png) 30 round; /*for opera*/
+border-image: url(border.png) 30 round; /*for internet explorer*/
+/*here 30 is for selecting the particular portion of image and round is for repeating the selected portion*/
+}
+#two {
+border: 10px solid transparent;   /*first we have to declare the border*/
+padding: 15px;
+-wekkit-border-image: url(border.png) 30 stretch;
+-o-border-image: url(border.png) 30 stretch;
+border-image: url(border.png) 30 stretch;
+}
+#three {
+border: 10px solid transparent;
+padding: 15px;
+-webkit-border-image: url(border.png) 50 round;
+-o-border-image: url(border.png) 50 round;
+border-image: url(border.png) 50 round;
+}
+#four {
+border: 10px solid transparent;
+padding: 15px;
+-webkit-border-image: url(border.png) 20% round;
+-o-border-image: url(border.png) 20% round;
+border-image: url(border.png) 20% round;
+}
+#five {
+border: 10px solid transparent;
+padding: 15px;
+-webkit-border-image: url(border.png) 30% round;
+-o-border-image: url(border.png) 30% round;
+border-image: url(border.png) 30% round;
+}
+/*border-image property is actually a shorthand property for the border-image-source, border-image-slice, border-image-width, border-image-outlet, border-image-repeat*/
+</style>
+</head>
+<body>
+<p>here we use the image border</p>
+<p id="one">Here one(middle) postion of the image is repeated to form the border</p>
+<br>
+<p>The below is the original image</p>
+<img src="border.png">
+<br>
+<p id="two">Here the particular selected portion is streached</p>
+<p id="three">Here the border image is 50 round</p>
+<p id="four">Here the border image is 20% round</p>
+<p id="five">Here the border image is 30% round</p>
+</body>
+</html>

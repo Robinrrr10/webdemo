@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+box-sizing: border-box;
+}
+body {
+margin: 0px;
+}
+.header {
+text-align: center;
+padding: 20px;
+background-color: #f2f2f2;
+}
+.topnav {
+overflow: hidden;
+background-color:grey;
+}
+.topnav a {
+float: left;
+display: block;
+padding: 10px 20px;
+text-align: center;
+text-decoration: none;
+color: orange;
+}
+.topnav a:hover {
+background-color: black;
+color: yellow;
+}
+.column {
+float: left;
+padding: 10px;
+}
+.side {
+width: 25%;
+}
+.middle {
+width: 50%;
+}
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+@media (max-width: 600px) {
+.column.side, .column.middle {
+width: 100%;
+}
+}
+.footer {
+text-align: center;
+padding: 20px;
+background-color: #f1f1f1;
+}
+</style>
+</head>
+<body>
+<div class="header">
+<h2>Header</h2>
+<p>Change the size of the screen</p>
+</div>
+<div class="topnav">
+<a href="">Home</a>
+<a href="">Service</a>
+<a href="">About</a>
+</div>
+<div class="row">
+<div class="column side">
+<h3>Side</h3>
+<p>This is pagagraph. This is pagagraph. This is pagagraph. This is pagagraph. This is pagagraph. This is pagagraph. This is pagagraph. This is pagagraph. This is pagagraph. This is pagagraph. This is pagagraph. This is pagagraph. This is pagagraph. This is pagagraph. This is pagagraph. </p>
+</div>
+<div class="column middle">
+<h2>Middle main content</h2>
+<p>This is pagagraph. This is pagagraph. This is pagagraph. This is pagagraph. This is pagagraph. This is pagagraph. This is pagagraph. This is pagagraph. This is pagagraph. This is pagagraph. This is pagagraph. This is pagagraph. This is pagagraph. This is pagagraph. This is pagagraph.This is pagagraph. This is pagagraph. This is pagagraph. This is pagagraph. This is pagagraph. This is pagagraph. This is pagagraph.This is pagagraph. This is pagagraph. This is pagagraph. This is pagagraph. This is pagagraph. This is pagagraph. This is pagagraph.This is pagagraph. This is pagagraph. This is pagagraph. This is pagagraph. This is pagagraph. This is pagagraph. This is pagagraph. This is pagagraph. This is pagagraph. This is pagagraph. This is pagagraph. This is pagagraph. This is pagagraph. This is pagagraph. This is pagagraph. </p>
+</div>
+<div class="column side">
+<h3>Side</h3>
+<p>This is pagagraph. This is pagagraph. This is pagagraph. This is pagagraph. This is pagagraph. This is pagagraph. This is pagagraph. This is pagagraph. This is pagagraph. This is pagagraph. This is pagagraph. This is pagagraph. This is pagagraph. This is pagagraph. This is pagagraph. </p>
+</div>
+</div>
+<div class="footer">
+<p>Footer<p>
+</div>
+</body>
+</html>

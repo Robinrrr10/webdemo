@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.one p {
+background-color: green;
+}
+div.two > p {
+background-color: skyblue;
+}
+div.three + p {
+background-color: orange;
+}
+div.four ~ p {
+background-color: purple;
+}
+</style>
+</head>
+<body>
+<h1>This is heading</h1>
+<p>This is paragraph</p>
+<div class="one">
+<p>This is paragraph with background color</p>
+<div>
+<p>This is paragraph with background color</p>
+</div>
+<p>This is paragraph with background color. here all paragraph inside the div will have the background color</p>
+</div>
+<p>This is paragraph</p>
+<br>
+<div class="two">
+<p>This is paragaph with color</p>
+<p>This is paragaph with color. here color will be in the paragraph directly inside this div </p>
+<div><p>This is paragraph will not color. because it is not the direct child of the div</p></div>
+</div>
+<br>
+<div class="three">
+<p>this is a paragraph</p>
+<p>this is a paragraph</p>
+</div>
+<p>This is first para after the above div so it is color</p>
+<p>This is a paragraph</p>
+<br>
+<p>This is paragraph</p>
+<div class="four">
+<p>This is paragraph</p>
+<p>This is paragraph</p>
+</div>
+<p>This is paragraph with color</p>
+<h4>This is heading</h4>
+<p>This is paragraph with color</p>
+<p>This is paragraphs after this div which is color. all paragraph after the div will be colored</p> 
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: #00ff00;
+}
+li {
+float: left;
+}
+
+li a {
+display: block;
+color: black;
+text-align: center;
+padding: 12px;
+text-decoration: none;
+}
+
+li a:hover {
+background-color:yellow;
+}
+</style>
+</head>
+</body>
+<ul>
+<li><a href="webfilepage2.html">page2</a></li>
+<li><a href="webfilepage3.html">page3</a></li>
+<li><a href="webfile.html">pagemain</a></li>
+</ul>
+<iframe src="http://www.google.com/" width="800px" height="600px" style="border:2px dotted blue;" name="iframe_a"></iframe>
+<br>
+<a href="http://www.kirusa.com/" target="iframe_a">kirusa web</a>
+<br>
+<a href="http://www.tutorialspoint.com/" target="iframe_a">tutorial point</a>
+<br>
+<button type="button"
+onclick="document.getElementById('one1').innerHTML = Date()">
+View Date below</button>
+<p id="one1"></p>
+<br>
+<p id="two2"></p>
+<script>
+document.getElementById("two2").innerHTML = "Hello it is script javascript";
+</script>
+<noscript>sorry,your browser dont not support javascript</noscript>
+<button type="button" onclick="myfunctionone()">Click here </button>
+<p id="three3">after clicking it will change</p>
+<script>
+function myfunctionone() {
+document.getElementById("three3").innerHTML = "Now it is changed";
+}
+</script>
+<p id="four4">this font syle may change </p>
+<script>
+function myfunctiontwo() {
+document.getElementById("four4").style.fontSize = "35px";
+document.getElementById("four4").style.color = "red";
+document.getElementById("four4").style.backgroundColor = "skyblue";
+}
+</script>
+<button type="button" onclick="myfunctiontwo()">Click here to change the syle of above fond</button>
+<script>
+function myfunctionthree(ab) {
+var pic;
+if (ab == 0) {
+pic = "image1.jpg"
+} else {
+pic = "image2.jpg"
+}
+document.getElementById('five5').src = pic;
+}
+</script>
+
+<img id="five5" src="image1.jpg" width="100px" heifht="100px">
+
+<p>
+<button type="button" onclick="myfunctionthree(1)">image2</button>
+<button type="button" onclick="myfunctionthree(0)">image1</button>
+</p>
+</body>
+</html>

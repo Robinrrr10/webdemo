@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Drag and drop</title>
+<style>
+div#ai1 {
+width:200px;
+height:200px;
+border:1px solid grey;
+padding:10px;
+}
+</style>
+<script>
+function drag(ev) {
+ ev.dataTransfer.setData("text", ev.target.id);
+}
+function allowDrop(ev) {
+ev.preventDefault();
+}
+function drop(ev) {
+ev.preventDefault();
+var data = ev.dataTransfer.getData("text");
+ev.target.appendChild(document.getElementById(data));
+}
+</script>
+</head>
+<body>
+ <p>Drag the image and drop</p>
+ <div id="ai1" ondragover="allowDrop(event)" ondrop="drop(event)"></div>
+ <br>
+ <img src="image1.jpg" id="oneee" draggable="true" width="100" height="100" ondragstart="drag(event)">
+</body>
+</html>

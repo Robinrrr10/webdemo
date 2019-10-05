@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>storage</title>
+ </head>
+ <body>
+  <div id="result"></div>
+  <script>
+  //check browser suppor
+  if (typeof(Storage) !== "undefined") {
+  //store 
+  //below can also be written as localStorage.lastname = "King"; 
+  localStorage.setItem("lastname","King");
+  //retrieve  
+  document.getElementById("result").innerHTML = localStorage.getItem("lastname");
+  } else {
+    document.getElementById("result").innerHTML = "Sorry,your broswe will not support web storage....";
+  }
+  //syntax for removing is localStorage.removeItem("lastname");
+  </script>
+ </body>
+</html>

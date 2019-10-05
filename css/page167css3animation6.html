@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.one {
+width: 100px;
+height: 100px;
+position: relative;
+background-color: red;
+-webkit-animation-name: onee;
+-webkit-animation-duration: 4s;
+-webkit-animation-timing-function: linear;
+-webkit-animation-delay: 2s;
+-webkit-animation-iteration-count: infinite;
+-webkit-animation-direction: alternate;
+animation-name: onee;
+animation-duration: 4s;
+animation-timing-function: linear;
+animation-delay: 2s;
+animation-iteration-count: infinite;
+animation-direction: alternate;          
+}
+.two {
+width: 100px;
+height: 100px;
+position: relative;
+background-color: red;
+-webkit-animation: onee 4s linear 2s infinite alternate;
+animation: onee 4s linear 2s infinite alternate;                /*short hand -everythings are covered in the single property*/
+}
+@-webkit-keyframes onee {
+0% {background-color: red; left: 0px; top: 0px;}
+25% {background-color: green; left: 300px; top: 0px;}
+50% {background-color: yellow; left: 300px; top: 300px;}
+75% {background-color: blue; left: 0px; top: 300px;}
+100% {background-color: grey; left: 0px; top: 0px;}
+}
+@keyframes onee {
+0% {background-color: red; left: 0px; top: 0px;}
+25% {background-color: green; left: 300px; top: 0px;}
+50% {background-color: yellow; left: 300px; top: 300px;}
+75% {background-color: blue; left: 0px; top: 300px;}
+100% {background-color: grey; left: 0px; top: 0px;}
+}
+</style>
+</head>
+<body>
+<div class="one">
+</div>
+<br>
+<br>
+<br>
+<div class="two">
+</div>
+</body>
+</html>

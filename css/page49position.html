@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.one {
+position: static;
+/*it is the default position*/
+border: 2px solid orange;
+}
+div.two {
+position: relative;
+/*it is the adjust the position according to the normal position*/
+left: 80px;
+border: 2px solid green;
+}
+div.three {
+position: fixed;
+/*it is fixed even we adjust the size of the browser screen if it hide we cannot see*/
+right: 80px;
+bottom: 70px;
+width: 500px;
+border: 2px solid green;
+}
+/*other than default it can be used with left,right,top,bottom*/
+div.on1 {
+position: relative;
+width: 400px;
+height: 350px;
+border: 2px solid red;
+}
+div.on2 {
+position: absolute;
+top: 50px;
+right: 0px;
+width: 200px;
+height: 150px;
+border: 2px solid blue;
+}
+</style>
+</head>
+<body>
+<p>position</p>
+<br>
+<br>
+<div class="one">
+<p>This position is staticThis position is staticThis position is static</p>
+<p>This position is staticThis position is staticThis position is static</p>
+<p>This position is staticThis position is staticThis position is static</p>
+</div>
+<br>
+<div class="two">
+<p> this is relative position. this is relative position. this is relative position.</p>
+<p> this is relative position. this is relative position. this is relative position.</p>
+<p> this is relative position. this is relative position. this is relative position.</p>
+</div>
+<br>
+<div class="three">
+<p>This is fixed. adjust the screen sizeThis is fixed. adjust the screen size</p>
+<p>This is fixed. adjust the screen sizeThis is fixed. adjust the screen size</p>
+<p>This is fixed. adjust the screen sizeThis is fixed. adjust the screen size</p>
+</div>
+<br>
+<div class="on1">
+ <div class="on2"></div>
+</div>
+</body>
+</html>

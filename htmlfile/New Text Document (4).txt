@@ -1,0 +1,3 @@
+Bug 1: Special greeting is not working (user_preference and user_greetings tables are not updating after hitting the URL)
+Bug 2: Successfully sending the voice sms in postcharging(com.kirusa.kvsms.cccompose.post.charging=true) even the user has insufficient balance
+Bug 3: Language selection prompt (3rd prompt="press 3 for english") is playing even there is only two language for that number plan

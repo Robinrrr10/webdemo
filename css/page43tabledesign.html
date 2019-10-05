@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+border: 1px solid blue;
+/*border-collapse: seperate is also used */
+border-spacing: 7px;
+}
+th, td {
+padding: 30px;
+text-align: right;
+}
+table.b{
+border-collapse: collapse;
+empty-cells: hide;
+}
+table.c {
+width: 100%;
+}
+th.d {
+height: 60px;
+text-align: center;
+vertical-align: top;
+}
+table.e {
+width: 100%;
+table-layout: fixed;
+/*default is the auto*/
+}
+</style>
+</head>
+<body>
+<table class="a">
+<tr>
+<th>Name</th>
+<th>Age</th>
+<th>Gender</th>
+</tr>
+<tr>
+<td>Pravin</td>
+<td></td>
+<td>Male</td>
+</tr>
+<tr>
+<td>Vicky</td>
+<td>24</td>
+<td>Male</td>
+</tr>
+</table>
+<br>
+<table class="b">
+<tr>
+<th>Name</th>
+<th>Age</th>
+<th>Gender</th>
+</tr>
+<tr>
+<td>Pravin</td>
+<td>25</td>
+<td>Male</td>
+</tr>
+<tr>
+<td>Vicky</td>
+<td>24</td>
+<td></td>
+</tr>
+</table>
+<br>
+<table class="c">
+<tr>
+<th class="d">Name</th>
+<th class="d">Age</th>
+<th class="d">Gender</th>
+</tr>
+<tr>
+<td>Pravin</td>
+<td>25</td>
+<td>Male</td>
+</tr>
+<tr>
+<td>Vicky</td>
+<td>24</td>
+<td>Male</td>
+</tr>
+</table>
+<br>
+<br>
+<br>
+<br>
+<table class="e">
+<tr>
+<th width="5%">Name</th>
+<th width="20%">Age</th>
+<th width="75%">Gender</th>
+</tr>
+<tr>
+<td width="5%">PravinfdaFafafdasfasfdasfdasfasfd</td>
+<td width="20%">54</td>
+<td width="75%">Male</td>
+</tr>
+<tr>
+<td width="5%">Vicky</td>
+<td width="20%">24</td>
+<td width="75%">Male</td>
+</tr>
+</table>
+</body>
+</html>

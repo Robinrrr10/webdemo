@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p:first-child {
+color: red;
+}
+p i:first-child {
+color: blue;
+}
+h1:last-child {
+color: green;
+}
+p:first-child i {
+    color: purple;
+} 
+q:lang(one) {
+quotes: "~" "~";
+/* used to give special rules for some specified */
+}
+input:focus {
+background-color: skyblue;
+
+}
+</style>
+</head>
+<body>
+<p>This is the first child <i>hellow</i>all<i>hello</i></p>
+<p>This is the second child</p>
+<p>This is the third child</p>
+<p>This is ....</p>
+<h1>this is first child heading</h1>
+<h1>This is second child heading</h1>
+<h1>This is ......</h1>
+<h1>This is the last child</h1>
+<p>This is the <i>man</i> and the <i>women</i> and the <i>child</i></p>
+<p>This is the <i>man</i> and the <i>women</i> and the <i>child</i></p>
+<p>This is the <i>man</i> and the <i>women</i> and the <i>child</i></p>
+<p>This is the <i>man</i> and the <i>women</i> and the <i>child</i></p>
+<p>Here <q lang="one"> some text are quoted</q> so to give new rules langs are used</p>
+<form>
+Enter the name:
+<input type="text" name="mname"><br>
+Enter petname:
+<input type="text" name="pname"><br>
+</form>
+</body>
+</html>

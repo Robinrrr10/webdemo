@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#one {
+border: 10px solid transparent;
+padding: 15px;
+border-image-source: url(border.png);
+/*using border image source without slice will add the border only in four corner. so use border image slice also which is given below*/
+}
+#two {
+border: 10px solid transparent;
+padding: 15px;
+border-image-source: url(border.png);
+border-image-slice: 30;
+/*using border image slice so there is full border*/
+}
+#three {
+border: 10px solid transparent;
+padding: 15px;
+border-image: url(border.png) round;
+-webkit-border-image: url(border.png) round;
+border-image-slice: 20%;
+/*using border image slice with percentage and here we used round to repeat it */
+}
+#four {
+border: 10px solid transparent;
+padding: 15px;
+border-image-source: url(border.png);
+border-image-repeat: round;
+border-image-slice: 30;
+border-image-width: 30px;
+/*here we used border wimage width and the repeat and the slice */
+}
+#five {
+border: 10px solid transparent;
+padding: 15px;
+border-image-source: url(border.png);
+border-image-repeat: round;
+border-image-slice: 30;
+border-image-width: 20px;
+border-image-outset: 15px;
+}
+#six {
+border: 10px solid transparent;
+padding: 15px;
+border-image-source: url(border.png);
+border-image-repeat: repeat;   /*here we will give stretch or repeat or round*/
+border-image-slice: 30;
+border-image-width: 20px;
+border-image-outset: 10px;
+}
+</style>
+</head>
+<body>
+<p>This is border image<p>
+<br>
+<p id="one">This is border image</p>
+<p id="two">This is border image</p>
+<p id="three">This is border image</p>
+<p id="four">This is border image</p>
+<p id="five">This is border image</p>
+<p id="six">This is border image</p>
+</body>
+</html>

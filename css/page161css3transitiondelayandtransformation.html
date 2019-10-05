@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.one {
+width: 100px;
+height: 100px;
+background-color: orange;
+-webkit-transition: width 2s;
+-webkit-transition-delay: 1s; /*used to wait for the time*/
+transition: width 2s;
+transition-delay: 1s;   
+}
+.one:hover {
+width: 300px;
+}
+.two {
+width: 100px;
+height: 100px;
+background-color: orange;
+-webkit-transition: width 2s, height 2s, -webkit-transform 2s;
+transition: width 2s, height 2s, transform 2s;
+}
+.two:hover {
+width: 200px;
+height: 200px;
+-webkit-transform: rotate(180deg);
+transform: rotate(180deg);
+}
+.three {
+/*here all property are given seperately*/
+width: 100px;
+height: 100px;
+background-color: orange;
+-webkit-transition-property: width;              /*we can give the transition property seperately*/
+-webkit-transition-duration: 2s;                   /*we can give the transistion duration seperately*/
+-webkit-transition-timing-function: linear;
+-webkit-transition-delay: 1s;
+transition: width 2s;
+transition-duration: 2s;
+transition-timing-function: linear;
+transition-delay: 1s;   
+}
+.three:hover {
+width: 300px;
+}
+.four {
+width: 100px;
+height: 100px;
+background-color: orange;
+-webkit-transition: width 2s linear 1s;
+transition: width 2s linear 1s;
+}
+.four:hover {
+width: 300px;
+}
+</style>
+</head>
+<body>
+<div class="one">
+</div>
+<br>
+<br>
+<br>
+<br>
+<div class="two">
+</div>
+<br>
+<br>
+<div class="three">
+</div>
+<br>
+<br>
+<br>
+<br>
+<div class="four">
+</div>
+</body>
+</html>

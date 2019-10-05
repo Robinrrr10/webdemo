@@ -1,0 +1,2 @@
+right click and click on view source code -to view the source code of the web page in the browser
+right click->inspect/inspect element -to view the source code in the same page.here we can edit and change and check it

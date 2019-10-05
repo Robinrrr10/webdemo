@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.one {
+display: inline-block;
+}
+.one a {
+float: left;
+padding: 5px 15px;
+text-decoration: none;
+color: black;
+}
+.two {
+display: inline-block;
+}
+.two a {
+float: left;
+text-decoration: none;
+color: black;
+padding: 10px 15px;
+}
+.two .active {
+background-color: green;
+color: yellow;
+}
+.two a:hover:not(.active) {
+background-color: grey;
+color: white;
+}
+
+.three {
+display: inline-block;
+}
+.three a {
+float: left;
+padding: 10px 15px;
+text-decoration: none;
+color: black;
+}
+.three .act {
+background-color: green;
+color: red;
+border-radius: 5px;
+}
+.three a:hover:not(.act) {
+background-color: grey;
+color: yellow;
+border-radius: 5px;
+}
+
+.four {
+display: inline-block;
+}
+.four a {
+float: left;
+padding: 8px 10px;
+text-decoration: none;
+color: black;
+transition: background-color 1s;
+}
+.four .ac {
+background-color: green;
+border-radius: 5px;
+color: white;
+}
+.four a:hover:not(.ac) {
+background-color: grey;
+border-radius: 5px;
+color: yellow;
+}
+</style>
+</head>
+<body>
+<p>This is pagination</p>
+<br>
+<div class="one">
+<a href="">&laquo;</a>
+<a href="">1</a>
+<a href="">2</a>
+<a href="">3</a>
+<a href="">4</a>
+<a href="">5</a>
+<a href="">6</a>
+<a href="">7</a>
+<a href="">&raquo;</a>
+</div>
+<br><br><br>
+<p>Active and hover pagination</p>
+<div class="two">
+<a href="">&laquo;</a>
+<a href="">1</a>
+<a class="active" href="">2</a>
+<a href="">3</a>
+<a href="">4</a>
+<a href="">5</a>
+<a href="">6</a>
+<a href="">7</a>
+<a href="">&raquo;</a>
+</div>
+<br><br><br>
+<p>Active and hover pagination</p>
+<div class="three">
+<a href="">&laquo;</a>
+<a href="">1</a>
+<a class="act" href="">2</a>
+<a href="">3</a>
+<a href="">4</a>
+<a href="">5</a>
+<a href="">6</a>
+<a href="">7</a>
+<a href="">&raquo;</a>
+</div>
+<br><br><br>
+<p>with transition effects</p>
+<div class="four">
+<a href="">&laquo;</a>
+<a href="">1</a>
+<a class="ac" href="">2</a>
+<a href="">3</a>
+<a href="">4</a>
+<a href="">5</a>
+<a href="">6</a>
+<a href="">7</a>
+<a href="">&raquo;</a>
+</div>
+</body>
+</html>

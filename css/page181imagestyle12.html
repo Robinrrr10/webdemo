@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.one {
+position: relative;
+width: 50%;
+}
+.two {
+display: block;
+width: 100%;
+height: auto;
+}
+.three {
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+background-color: purple;
+overflow: hidden;
+width: 0;
+height: 100%;
+transition: 1s ease;
+}
+.one:hover .three {
+width: 100%;
+}
+.four {
+white-space: nowrap;
+color: green;
+font-size: 20px;
+position: absolute;
+overflow: hidden;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+</style>
+</head>
+<body>
+<div class="one">
+<img class="two" src="mobilecom.jpg">
+<div class="three">
+<div class="four">Hi Hello</div>
+</div>
+</div>
+</body>
+</html>

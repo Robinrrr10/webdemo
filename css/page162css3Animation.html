@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.one {
+width: 150px;
+height: 100px;
+background-color: red;
+-webkit-animation-name: one;
+-webkit-animation-duration: 4s;
+animation-name: one;
+animation-duration: 4s;   //if there is no animation duration it will not work 
+}
+@-webkit-keyframes one {
+from {
+background-color: red;
+}
+to {
+background-color: yellow;
+}
+}
+@keyframes one {
+from {
+background-color: red;
+}
+to {
+background-color: yellow;
+}
+}
+.two {
+width: 150px;
+height: 150px;
+background-color: red;
+-webkit-animation-name: two;
+-webkit-animation-duration: 4s;
+animation-name: two;
+animation-duration: 4s;   
+}
+@-webkit-keyframes two {
+25% { background-color: yellow;}
+50% { background-color: green;}
+75% { background-color: blue;}
+100% {background-color: brown;}
+}
+@keyframes two {
+25% { background-color: yellow;}
+50% { background-color: green;}
+75% { background-color: blue;}
+100% {background-color: brown;}
+}
+</style>
+</head>
+<body>
+<div class="one">
+</div>
+<br>
+<br>
+<div class="two">
+</div>
+</body>
+</html>

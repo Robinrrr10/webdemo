@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.one {
+border: 1px solid black;
+padding: 15px;
+width: 300px;
+resize: horizontal;  /*here we can resize only horizontally(width)*/
+overflow: auto;   /*if we use resize we should use overflow auto*/
+}
+.two {
+border: 1px solid black;
+padding: 15px;
+width: 300px;
+resize: vertical;  /*here we can resize only vertically(height)*/
+overflow: auto;   /*if we use resize we should use overflow auto*/
+}
+.three {
+border: 1px solid black;
+padding: 15px;
+width: 300px;
+resize: both;  /*here we can resize horizontally and vertically (width and height)*/
+overflow: auto;   /*if we use resize we should use overflow auto*/
+}
+</style>
+</head>
+<body>
+<div class="one">
+This area is resizeable horizontallyThis area is resizeable horizontallyThis area is resizeable horizontallyThis area is resizeable horizontallyThis area is resizeable horizontallyThis area is resizeable horizontallyThis area is resizeable horizontally
+</div>
+<br><br>
+<div class="two">
+This is the area resizable in veritically. This is the area resizable in veritically. This is the area resizable in veritically. This is the area resizable in veritically. This is the area resizable in veritically. This is the area resizable in veritically. This is the area resizable in veritically. </div>
+<br><br>
+<div class="three">
+This is the area resizable in veritically. This is the area resizable in veritically. This is the area resizable in veritically. This is the area resizable in veritically. This is the area resizable in veritically. This is the area resizable in veritically. This is the area resizable in veritically. </div>
+</body>
+</html>

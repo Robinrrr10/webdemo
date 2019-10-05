@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html> 
+ <head>
+  <title>paragraph color and aign</title>
+ <style>
+p {
+color:green;
+text-align:center;
+}
+#para1 {
+color:blue;
+text-align:right;
+}
+.myclass {
+color:red;
+text-align:left;
+}
+p.paraclass {
+color: brown;
+}
+p.multiclass {
+text-align: right;
+}
+ </style> 
+ </head>
+<body>
+ <p>This is paragraph</p>
+ <p>This is paragraph 2</p>
+ <p>This is paragraph 3</p>
+ <p id="para1">This is paragraph with id</p>
+ <!--id cannot start with number-->
+ <h1 class="myclass">This is class heading</h1>
+ <p class="myclass">This is class paragraph</p>
+ <p class="paraclass">this is class in paragraph</p>
+ <p class="paraclass multiclass">Here two class are used. we can use more than one class</p>
+ <!--class name cannot start with number-->
+</body>
+</html>

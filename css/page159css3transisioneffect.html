@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.one {
+width: 100px;
+height: 100px;
+background-color: red;
+-webkit-transition: width 2s;
+transition: width 2s;
+}
+.one:hover {
+width: 300px;
+}
+.two {
+width: 100px;
+height: 100px;
+background-color: red;
+-webkit-transition: width 2s, height 4s;
+transition: width 2s, height 4s;
+}
+.two:hover {
+width: 300px;
+height: 300px;
+}
+.three {
+width: 100px;
+height: 100px;
+background-color: red;
+-webkit-transition: width 2s, height 4s, background-color 5s;
+transition: width 2s, height 4s, background-color 5s;
+}
+.three:hover {
+width: 300px;
+height: 300px;
+background-color: green;
+}
+</style>
+</head>
+<body>
+<div class="one">
+</div>
+<br>
+<br>
+<div class="two">
+</div>
+<br>
+<br>
+<div class="three">
+</div>
+</body>
+</html>

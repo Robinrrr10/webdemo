@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul.one {
+list-style-type: circle;
+}
+ol.two {
+list-style-type: lower-alpha;
+}
+ul.three {
+list-style-image: url('phone.jpg');
+}
+ul.a {
+list-style-position: inside;
+}
+ul.b {
+list-style-position: outside;
+}
+ul.c {
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+ul.d {
+list-style: square inside url('phone.jpg');
+/* here if the image is not available then it will display the square*/
+}
+ul.e {
+background: grey;
+padding: 20px;
+}
+ul.e li {
+background: skyblue;
+padding: 5px;
+margin-left: 60px;
+}
+ul.f {
+    background: #3399ff;
+    padding: 20px;
+}
+ul.f li {
+    background: #cce5ff;
+    margin: 5px;
+}
+ul.g {
+background-color: green;
+list-style-type: none;
+padding: 30px;
+border-left: 5px solid red;
+}
+ul.h {
+border: 1px solid grey;
+list-style-type: none;
+padding: 0px;
+}
+ul.h li {
+border: 1px solid grey;
+padding: 10px 20px;
+}
+ul.h li:last-child {
+border-bottom: none;
+}
+</style>
+</head>
+<body>
+<ul class="one">
+<li>car</li>
+<li>bike</li>
+<li>truck</li>
+</ul>
+<br>
+<ol class="two">
+<li>Lion</li>
+<li>tiger</li>
+<li>bear</li>
+</ol>
+<br>
+<ul class="three">
+<li>phone</li>
+<li>Landline</li>
+<li>Wirelessphone</li>
+</ul>
+<br>
+<p>Below list is just inside</p>
+<ul class="a">
+<li>Book</li>
+<li>E-book</li>
+<li>Internet</li>
+</ul>
+<br>
+<p>Below list is just outside</p>
+<ul class="b">
+<li>Book</li>
+<li>E-book</li>
+<li>Internet</li>
+</ul>
+<br>
+<p>Below list with no style</p>
+<ul class="c">
+<li>Book</li>
+<li>E-book</li>
+<li>Internet</li>
+</ul>
+<br>
+<p>Below list all styles in single line</p>
+<ul class="d">
+<li>Book</li>
+<li>E-book</li>
+<li>Internet</li>
+</ul>
+<br>
+<p>Below list styles</p>
+<ul class="e">
+<li>Book</li>
+<li>E-book</li>
+<li>Internet</li>
+</ul>
+<br>
+<p>Below list styles</p>
+<ul class="f">
+<li>Book</li>
+<li>E-book</li>
+<li>Internet</li>
+</ul>
+<br>
+<p>Below list styles</p>
+<ul class="g">
+<li>Book</li>
+<li>E-book</li>
+<li>Internet</li>
+</ul>
+<br>
+<p>full width border list</p>
+<ul class="h">
+<li>Book</li>
+<li>E-book</li>
+<li>Internet</li>
+</ul>
+</body>
+</html>

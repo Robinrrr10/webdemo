@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#one {
+position: relative;
+}
+#one li {
+margin: 0;
+padding: 0;
+list-style: none;
+position: absolute;
+top: 0;
+}
+#one li, #one a {
+height: 44px;
+display: block;
+}
+#two {
+left: 0;
+width: 46px;
+background: url(imagetwo.gif) 0 0;
+}
+#three {
+left: 63px;
+width: 43px;
+background: url(imagetwo.gif) -47px 0;
+}
+#four {
+left: 129px;
+width: 43px;
+background: url(imagetwo.gif) -91px 0;
+}
+#two a:hover {
+background: url(imagetwo.gif) 0 -45px;
+}
+#three a:hover {
+background: url(imagetwo.gif) -47px -45px;
+}
+#four a:hover {
+background: url(imagetwo.gif) -91px -45px;
+}
+</style>
+</head>
+<body>
+<ul id="one">
+<li id="two"><a href=""></a></li>
+<li id="three"><a href=""></a></li>
+<li id="four"><a href=""></a></li>
+</ul>
+<br>
+<br>
+<br>
+<br>
+<p>here we used only one image. and we have not shown the full image. we show like cropping. in hover also we use the same below dull in the same image. so there no dely in loading the image. </p>
+</body>
+</html>

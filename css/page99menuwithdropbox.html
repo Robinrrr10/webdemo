@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+background-color: orange;
+overflow: hidden;
+}
+li {
+float: left;
+}
+li a, .one {
+display: block;
+color: white;
+text-decoration: none;
+padding: 10px 20px;
+text-align: center;
+}
+li a:hover, .two:hover .one {
+background-color: purple;
+}
+li .two {
+display: inline-block;
+}
+.three {
+display:none;
+position: absolute;
+background-color: brown;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+.three a:hover {
+background-color: grey;
+}
+.two:hover .three {
+display: block;
+}
+</style>
+</head>
+<body>
+<ul>
+<li><a href="">Home</a></li>
+<li><a href="">Service</a></li>
+<li><a href="">Products</a></li>
+<li class="two">
+<a href="javascript:void(0)" class="one">Dropdown</a>
+<div class="three">
+<a href="">link 1</a>
+<a href="">link 2</a>
+<a href="">link 3</a>
+</div>
+</li>
+</ul>
+</body>
+</html>

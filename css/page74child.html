@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+:root {
+/*set style for the whole root html document*/
+background-color: orange;
+}
+p:only-of-type {
+color: green;
+}
+h3:only-child {
+color: pink;
+}
+input:optional {
+background-color: yellow;
+}
+:target {
+border=2px solid yellow;
+background-color: skyblue;
+font-size:25px;
+}
+</style>
+</head>
+<body>
+<p>This is paragraph<p>
+<div><p>This is a paragraph inside the div. only one para inside the div</p></div>
+<div>
+<p>This is a paragraph inside the div</p>
+<p>This is a paragraph inside the div</p>
+</div>
+<div><p>This is a paragraph inside the div.only one para inside the div or element</p></div>
+<p>This is a paragraph</p>
+<p>This is a paragraph</p>
+<div>
+<p>This is a paragraph inside the div</p>
+<p>This is a paragraph inside the div</p>
+<p>This is a paragraph inside the div</p>
+<p>This is a paragraph inside the div</p>
+</div>
+<h3>this is heading</h3>
+<div><h3>This is only one heading inside the div</h3></div>
+<div>
+<h3>This is heading inside the div</h3>
+<h3>This is heading inside the div</h3>
+<h3>This is heading inside the div</h3>
+</div>
+<div><h3>This is only one heading inside the div</h3></div>
+<br>
+<form>
+Enter name:
+<input type="text" name="nm" required><br>
+Enter petname:
+<input type="text" name="pnm"><br>
+</form>
+<hr>
+<p>Enter the name:<br><input required></p>
+<p>Enter the petname:<br><input></p>
+<br>
+<a href="#one">highlight fish</a><br>
+<a href="#two">highlight Animal</a><br>
+<a href="#three">hightlight human</a><br>
+<p>select any click any one above and see that in below<p>
+<p id="one">You have selected fish</p>
+<p id="two">you have selected animal</p>
+<p id="three">you have selected human</p>
+<p>In above selection at the time we can select only one</p>
+<br>
+<br>
+</body>
+</html>

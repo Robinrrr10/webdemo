@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+a[target] {
+background-color: skyblue;
+}
+a[target=_parent] {
+background-color: red;
+}
+[title~=mine] {
+border: 3px solid orange;
+/*here it will add the border whose title contain the word "mine"*/
+}
+[title=one] {
+border: 5px dotted blue;
+/*here it will add this border whose title is "one"*/
+}
+[class|="two"] {
+background: pink;
+/*here it will give background only for the class name starts with "two" followed by "-" ie starts"two-". if there is no - and start with next word it will not give background*/
+}
+[class^="four"] {
+background: green;
+/*here it will give background for all class start with four*/
+}
+[class$="five"] {
+background: yellow;
+color: red;
+/*here it will style the class attribute ends with five*/
+}
+[class*="six"] {
+background: grey;
+/*here it will style the attribute class name contain the word six*/
+}
+input[type=text] {
+background-color: skyblue;
+width: 150px;
+display: block;
+margin: bottom: 10px;
+}
+input[type=button] {
+width: 220px;
+margin-left: 35px;
+display: block;
+}
+</style>
+</head>
+<body>
+<p>styling specific attribute</p>
+<a href="http://www.google.com/">Google</a>
+<a href="http://www.w3schools.com/" target="_blank">W3Schools</a>
+<a href="http://www.wiki.com/">wiki</a>
+<a href="http://www.kirusa.com/" target="_top">Kirusa</a>
+<a href="http://www.yahoo.com/" target="_parent">Yahoo</a>
+<br>
+<img src="telecom.jpg" title="image mine" width="200" height="100">
+<img src="telecom.jpg" title="hello" width="250" height="125">
+<img src="mobilecom.jpg" title="mine" width="300" height="200">
+<img src="telecom.jpg" title="mine hihi" width="350" height="220">
+<img src="mobilecom.jpg" title="haha" width="400" height="250">
+<img src="mobilecom.jpg" title="one" width="420" height="255">
+<br>
+<h4 class="two">this is heading</h4>
+<h4 class="twothree">this is heading</h4>
+<p class="two-three">this is paragraph</p>
+<p class="two-hello">this is paragraph</p>
+<p class="hell">this is paragraph</p>
+<p>This is paragraph</p>
+<br>
+<br>
+<h4 class="four">this is heading</h4>
+<h4 class="fourthree">this is heading</h4>
+<p class="four-three">this is paragraph</p>
+<p class="four-hello">this is paragraph</p>
+<p class="hell">this is paragraph</p>
+<p>This is paragraph</p>
+<br>
+<br>
+<h4 class="five">this is heading</h4>
+<h4 class="twofive">this is heading</h4>
+<p class="two-five">this is paragraph</p>
+<p class="two-five">this is paragraph</p>
+<p class="hell">this is paragraph</p>
+<p>This is paragraph</p>
+<br>
+<br>
+<h4 class="six">this is heading</h4>
+<h4 class="fdfasixdaf">this is heading</h4>
+<p class="ad-six-fie">this is paragraph</p>
+<p class="six-afdfe">this is paragraph</p>
+<p class="hell">this is paragraph</p>
+<p>This is paragraph</p>
+<br>
+<br>
+<form>
+Enter your name:<br>
+<input type="text" name="name" size="20"><br>
+Enter last name:<br>
+<input type="text" name="lnamr value="lastname" size="20"><br>
+<input type="button" value="click here">
+</form>
+
+</body>
+</html>

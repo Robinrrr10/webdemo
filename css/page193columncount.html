@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.one {
+-moz-column-count: 3;
+-webkit-column-count: 3;
+column-count: 3;
+}
+.two {
+-moz-column-count: 3;
+-webkit-column-count: 3;
+column-count: 3;
+-moz-column-gap: 100px;
+-webkit-column-gap: 100px;
+column-gap: 100px;
+}
+.three {
+-moz-column-count: 3;
+-webkit-column-count: 3;
+column-count: 3;
+-moz-column-gap: 100px;
+-webkit-column-gap: 100px;
+column-gap: 100px;
+-moz-column-rule-style: solid;
+-webkit-column-rule-style: solid;
+column-rule-style: solid;
+}
+.four {
+-moz-column-count: 3;
+-webkit-column-count: 3;
+column-count: 3;
+-moz-column-gap: 100px;
+-webkit-column-gap: 100px;
+column-gap: 100px;
+-moz-column-rule-style: solid;
+-webkit-column-rule-style: solid;
+column-rule-style: solid;
+-moz-column-rule-width: 14px;
+-webkit-column-rule-width: 14px;
+column-rule-width: 14px;
+}
+.five {
+-moz-column-count: 3;
+-webkit-column-count: 3;
+column-count: 3;
+-moz-column-gap: 100px;
+-webkit-column-gap: 100px;
+column-gap: 100px;
+-moz-column-rule-style: solid;
+-webkit-column-rule-style: solid;
+column-rule-style: solid;
+-moz-column-rule-width: 14px;
+-webkit-column-rule-width: 14px;
+column-rule-width: 14px;
+-moz-column-rule-color: orange;
+-webkit-column-rule-color: orange;
+column-rule-color: orange;
+}
+.six {
+-moz-column-count: 3;
+-webkit-column-count: 3;
+column-count: 3;
+-moz-column-gap: 100px;
+-webkit-column-gap: 100px;
+column-gap: 100px;
+-moz-column-rule: 1px dotted blue;
+-webkit-column-rule: 1px dotted blue;
+column-rule: 1px dotted blue;
+}
+.seven {
+-moz-column-count: 3;
+-webkit-column-count: 3;
+column-count: 3;
+-moz-column-gap: 100px;
+-webkit-column-gap: 100px;
+column-gap: 100px;
+-moz-column-rule: 1px dotted blue;
+-webkit-column-rule: 1px dotted blue;
+column-rule: 1px dotted blue;
+}
+.eight {
+-moz-column-span: all;
+webkit-column-span: all;
+column-span: all;                    /*column span means this element should not be in divided in column*/
+}
+.nine {
+-moz-column-count: 3;
+-webkit-column-count: 3;
+column-count: 3;
+-moz-column-width: 400px;   
+-webkit-column-width: 400px;
+column-width: 400px;    /*minimum each column should be 400px, so if the screen width is 850px then there will be only two column*/
+}
+.ten {
+border: 1px solid black;
+height: 300px;
+-moz-column-count: 3;
+-webkit-column-count: 3;
+column-count: 3;
+-moz-column-fill: auto;  
+-webkit-column-fill: auto;
+column-fill: auto;     /*according to the height the content will be in the columns. some times it may be in 1 or 2 column if the content is less*/
+}
+.te {
+border: 1px solid black;
+height: 300px;
+-moz-column-count: 3;
+-webkit-column-count: 3;
+column-count: 3;
+-moz-column-fill: balance;
+-webkit-column-fill: balance;
+column-fill: balance;   /*not consider about the height. it will surely have 3 columns*/
+}
+.eleven {
+-moz-columns: 300px 3;
+-webkit-columns: 300px 3;
+columns: 300px 3;     /*width and column count*/
+}
+</style>
+</head>
+<body>
+<p>Diving the paragraph in some columns</p>
+<div class="one">
+Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. </div>
+<br><br>
+<p>column gap</p>
+<br>
+<div class="two">
+Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. </div>
+<br><br>
+<p>column rule style</p>
+<br>
+<div class="three">
+Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. </div>
+<br><br>
+<p>column rule width</p>
+<br>
+<div class="four">
+Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. </div>
+<br><br>
+<p>column rule color</p>
+<br>
+<div class="five">
+Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. </div>
+<br><br>
+<p>column and rule </p>
+<br>
+<div class="six">
+Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. </div>
+<br><br>
+<p>column and rule </p>
+<br>
+<div class="seven">
+Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph.<h3 class="eight">This is a heading this is a heading this is a heading this is a heading this is a heading</h3>Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a<h3 class="eight">This is a heading this is a heading this is a heading this is heading this is heading </h3> paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. </div>
+<br><br>
+<p>column width - adjust the screen size</p>
+<br>
+<div class="nine">
+Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. </div>
+<br><br>
+<p>column fill auto</p>
+<br>
+<div class="ten">
+Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph.</div>
+<br><br>
+<p>column fill Balance</p>
+<br>
+<div class="te">
+Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph.</div>
+<br><br>
+<p>columns- width and column count</p>
+<br>
+<div class="eleven">
+Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. Hi all this is a paragraph. </div>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<DOCTYPE html>
+<html>
+<head>
+<style>
+#hi {
+position: relative;
+height: 200px;
+width: 200px;
+margin: 100px;
+padding: 10px;
+border: 1px solid black;
+}
+#one {
+position: absolute;
+padding: 50px;
+border: 1px solid blue;
+background-color: red;
+-webkit-transform: rotateY(60deg);
+-webkit-transform-style: preserve-3d;
+transform: rotateY(60deg);
+transform-style: preserve-3d;  /*transform style specifies how the nested element are rendered in 3d space*/
+}
+#two {
+padding: 40px;
+position: absolute;
+border: 1px solid green;
+background-color: yellow;
+-webkit-transform: rotateY(-60deg);
+transform: rotateY(-60deg);
+}
+#three {
+position: relative;
+width: 150px;
+height: 150px;
+margin: 50px;
+padding: 10px;
+border: 1px solid black;
+-webkit-perspective: 150px;
+perspective: 150px;    /*Specifies how the 3d element are viewed*/
+}
+#four {
+padding: 50px;
+position: absolute;
+border:1 px solid black;
+background-color: red;
+-webkit-transform: rotateX(45deg);
+transform: rotateX(45deg);
+}
+#five {
+position: relative;
+width: 150px;
+height: 150px;
+margin: 50px;
+padding: 10px;
+border: 1px solid black;
+-webkit-perspective: 150px;
+-webkit-perspective-origin: 10% 10%;
+perspective: 150px;    /*Specifies how the 3d element are viewed*/
+perspective-origin: 10% 10%;  /*specifies the bottom position of 3d element*/
+}
+#six {
+padding: 50px;
+position: absolute;
+border:1 px solid black;
+background-color: red;
+-webkit-transform: rotateX(45deg);
+transform: rotateX(45deg);
+}
+.hh {
+position: relative;
+height: 60px;
+width: 60px;
+background-color: red;
+-webkit-transform: rotateY(180deg);
+transform: rotateY(180deg);
+}
+.seven {
+-webkit-backface-visibility: hidden;   /*should visible or not when not facing the screen*/
+backface-visibility: hidden;
+}
+.eight {
+-webkit-backface-visibility: visible;     /*should visible or not when not facing the screen*/
+backface-visibility: visible;
+}
+</style>
+</head>
+<body>
+<div id="hi">
+ <div id="one">HELLOW
+  <div id="two">HIHI</div>
+ </div>
+</div>
+<br>
+<br>
+<div id="three">
+<div id="four">HJHJHJ</div>
+</div>
+</div>
+<br>
+<br>
+<div id="five">
+<div id="six">HJHJHJ</div>
+</div>
+<br>
+<br>
+<div class="hh seven">ONE</div>
+<div class="hh eight">TWO</div>
+</body>
+</html>

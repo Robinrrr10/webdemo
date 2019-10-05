@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+input[type=text] {
+width: 100%;
+border: 2px solid green;
+border-radius: 5px;
+padding: 18px 25px;
+margin: 8px 0;
+display: inline-block;
+box-sizing: border-box;
+font-size: 20px;
+}
+input[type=submit] {
+width: 100%;
+background-color: green;
+border-radius: 5px;
+font-size: 23px;
+padding: 10px 25px;
+cursor: pointer;
+border: none;
+color: white;
+margin: 8px 0;
+}
+input[type=submit]:hover {
+background-color: black;
+}
+div {
+background-color: grey;
+padding: 20px;
+border-radius: 5px;
+}
+</style>
+</head>
+<body>
+<h3>form styling in CSS</h3>
+<div>
+<form>
+<label for="fname">First Name:</label>
+<input type="text" id="fname" name="fn" placeholder="first name here">
+<label for="lname">Last Name:</label>
+<input type="text" id="lname" name="ln" placeholder="last name here">
+<label for="con">Country:</label>
+<select id="con" name="cont">
+<option value="india">India</option>
+<option value="pak">Pakistan</option>
+<option value="usa">USA</option>
+<option value="canada">Canada</option>
+</select> 
+<input type="submit" value="Submit">
+</form>
+</div>
+</body>
+</html>

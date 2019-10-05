@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.one {
+overflow: auto;
+}
+#five {
+margin-left: 4px;
+}
+#two {
+float: none;
+width: auto;
+}
+#three {
+margin: 0;
+padding: 0;
+}
+.four {
+background-color: grey;
+border: 1px solid blue;
+color: white;
+border-radius: 5px;
+list-style-type: none;
+margin: 4px;
+padding: 2px;
+}
+
+@media screen and (min-width: 480px) {
+#two {
+width: 200px;
+float: left;
+}
+#five {
+margin-left: 216px;
+}
+}
+</style>
+</head>
+<body>
+<div class="one">
+<div id="two">
+<ul id="three">
+<li class="four">Menu-item 1</li>
+<li class="four">Menu-item 1</li>
+<li class="four">Menu-item 1</li>
+<li class="four">Menu-item 1</li>
+<li class="four">Menu-item 1</li>
+</ul>
+</div>
+<div id="five">
+<p>Change the screen size and see the effect</p>
+</div>
+</div>
+</body>
+</html>

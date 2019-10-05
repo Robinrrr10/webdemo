@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head> 
+ <title>SVG-Scalable Vector Graphics</title>
+</head>
+<body>
+<p>This is the svg in html</p>
+<br>
+<svg width="200" height="200">
+ <circle cx="90" cy="90" r="70" stroke="blue" stroke-width="2" fill="grey" />
+</svg>
+<br>
+<svg width="300" height="300">
+ <rect width="150" height="70" style="fill:rgb(255,0,0);stroke-width:1;stroke:green;" />
+</svg>
+<br>
+<svg width="400" height="200">
+ <rect rx="20" ry="20" x="60" y="30" width="150" height="70" style="fill:pink;stroke-width:2;stroke:purple;opacity:0.5;" />
+</svg>
+<br>
+<svg width="400" height="400">
+ <polygon points="100,10 40,198 190,78 10,78 160,198" style="fill:yellow;stroke:black;stroke-width:3;fill-rule:evenodd;" />
+</svg>
+<br>
+<svg height="300" height="300">
+<defs>
+ <linearGradient id="grr" x1="0%" y1="0%" x2="100%" y2="0%">
+  <stop offset="0%" style="stop-color:rgb(0,255,255);stop-opacity:1;" />
+  <stop offset="100%" style="stop-color:rgb(255,0,0);stop-opacity:1;" />
+ <linearGradient>
+</defs>
+<ellipse cx="90" cy="70" rx="80" ry="50" fill="url(#grr)" />
+<text fill="#ffffff" font-size="40" font-family="Arial" x="30" y="86">Kirusa</text>
+Sorry your does not support inline SVG.
+</svg>
+</body>
+</html>

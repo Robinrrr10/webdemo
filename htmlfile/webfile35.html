@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function clickcoun() {
+ if(typeof(Storage) !== "undefined") {
+ if (sessionStorage.clickcount) {
+    sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;
+  } else {
+    sessionStorage.clickcount = 1;
+  }
+  document.getElementById("res").innerHTML = "you have clicked the button" + sessionStorage.clickcount + "time(s) in this session.";
+} else {
+  document.getElementById("res").innerHTML = "sorry, your browser does not support web(browser) storage";
+ }
+}
+
+</script>
+</head>
+<body>
+<p><button onclick="clickcoun()" type="button">click here </button>
+<div id="res"></div>
+<p>click the button to see counter increase</p>
+<p>close the browser tab and try again.it counter will increase from begining</p>
+</body>
+</html>

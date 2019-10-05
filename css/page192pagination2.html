@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.one {
+display: inline-block;
+}
+.one a {
+float: left;
+padding: 10px 10px;
+color: black;
+text-decoration: none;
+transition: background-color 1s;
+border: 1px solid black;
+}
+.one a.active {
+background-color: green;
+color: white;
+border: 1px solid #7e9af2;
+}
+.one a:hover:not(.active) {
+background-color: grey;
+}
+
+.two {
+display: inline-block;
+}
+.two a {
+float: left;
+padding: 10px 10px;
+color: black;
+text-decoration: none;
+border: 1px solid black;
+}
+.two a.activ {
+background-color: green;
+color: white;
+border:2px solid red;
+}
+.two a:hover:not(.activ) {
+background-color: grey;
+}
+.two a:first-child {
+border-top-left-radius: 5px;
+border-bottom-left-radius: 5px;
+}
+.two a:last-child {
+border-top-right-radius: 5px;
+border-bottom-right-radius: 5px;
+}
+
+.three {
+display: inline-block;
+}
+.three a {
+float: left;
+padding: 8px 15px;
+color: black;
+text-decoration: none;
+border: 1px solid black;
+margin: 0 5px;
+}
+.three a.acti {
+background-color: green;
+color: white;
+border: 1px solid orange;
+}
+.three a:hover:not(.acti) {
+background-color: grey;
+}
+.four {
+display: inline-float;
+}
+.four a {
+float: left;
+padding: 10px 10px;
+color: black;
+text-decoration: none;
+transition: background-color 0.5s;
+border: 1px solid black;
+font-size: 25px;
+}
+.four a.act {
+background-color: green;
+border: 1px solid brown;
+}
+.four a:hover:not(.act) {
+background-color: grey;
+}
+.five {
+text-align: center;
+}
+
+.six {
+display: inline-block;
+}
+.six a {
+float: left;
+color: black;
+padding: 8px 16px;
+text-decoration: none;
+transition: background-color 0.5s;
+border: 1px solid black;
+}
+.six a.ac {
+background-color: green;
+}
+.six a:hover:not(.ac) {
+background-color: grey;
+}
+ul.seven {
+padding: 8px 16px;
+list-style: none;
+background-color: #eee;
+}
+ul.seven li {
+display: inline;
+}
+ul.seven li+li:before {
+padding: 8px;
+color: black;
+content: "/\00a0";
+}
+</style>
+</head>
+<body>
+<p>pagination with border</p>
+<div class="one">
+<a href="">&laquo;</a>
+<a href="">1</a>
+<a class="active" href="">2</a>
+<a href="">3</a>
+<a href="">4</a>
+<a href="">5</a>
+<a href="">6</a>
+<a href="">7</a>
+<a href="">&raquo;</a>
+</div>
+<br><br><br>
+<div class="two">
+<a href="">&laquo;</a>
+<a href="">1</a>
+<a class="activ" href="">2</a>
+<a href="">3</a>
+<a href="">4</a>
+<a href="">5</a>
+<a href="">6</a>
+<a href="">7</a>
+<a href="">&raquo;</a>
+</div>
+<br><br><br>
+<div class="three">
+<a href="">&laquo;</a>
+<a href="">1</a>
+<a class="acti" href="">2</a>
+<a href="">3</a>
+<a href="">4</a>
+<a href="">5</a>
+<a href="">6</a>
+<a href="">7</a>
+<a href="">&raquo;</a>
+</div>
+<br><br><br>
+<div class="four">
+<a href="">&laquo;</a>
+<a href="">1</a>
+<a class="act" href="">2</a>
+<a href="">3</a>
+<a href="">4</a>
+<a href="">5</a>
+<a href="">6</a>
+<a href="">7</a>
+<a href="">&raquo;</a>
+</div>
+<br><br><br>
+<p>Centered the pagination</p>
+<div class="five">
+<div class="three">
+<a href="">&laquo;</a>
+<a href="">1</a>
+<a class="acti" href="">2</a>
+<a href="">3</a>
+<a href="">4</a>
+<a href="">5</a>
+<a href="">6</a>
+<a href="">7</a>
+<a href="">&raquo;</a>
+</div>
+</div>
+<p>next and prevoius button</p>
+<div class="six">
+<a href=""><</a>
+<a href="">></a>
+</div>
+<br>
+<br>
+<div class="six">
+<a class="ac" href="">Home</a>
+<a href="">Link1</a>
+<a href="">Link2</a>
+<a href="">Link3</a>
+</div>
+<br>
+<br>
+<br>
+<p>breadcrums pagination</p>
+<ul class="seven">
+<li><a href="">Home</a></li>
+<li><a href="">Products</a></li>
+<li><a href="">Service</a></li>
+<li>About</li>
+</ul>
+</body>
+</html>

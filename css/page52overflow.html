@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+border: 1px solid grey;
+background-color: skyblue;
+width: 400px;
+height: 300px;
+}
+div.one {
+overflow: visible;
+/* by default overflow is visible */
+}
+div.two {
+overflow: hidden;
+}
+div.three {
+overflow: scroll;
+/*here it will add the scroll bar horizontally and vertically*/
+}
+div.four {
+overflow: auto;
+/* here it will add the scroll bar onle if it is neccessary (it add then the text exceeds) */
+}
+div.five {
+overflow-x: hidden;  /*left and right side*/
+overflow-y: scroll;  /* top and bottom side*/
+}
+</style>
+</head>
+<body>
+<p>overflow is in below</p>
+<br>
+<div class="one">
+<p>This is a paragraphThis is a paragraphThis is a paragraphThis is a paragraphThis is a paragraph</p>
+<p>This is a paragraphThis is a paragraphThis is a paragraphThis is a paragraphThis is a paragraph</p>
+<p>This is a paragraphThis is a paragraphThis is a paragraphThis is a paragraphThis is a paragraph</p>
+<p>This is a paragraphThis is a paragraphThis is a paragraphThis is a paragraphThis is a paragraph</p>
+<p>This is a paragraphThis is a paragraphThis is a paragraphThis is a paragraphThis is a paragraph</p>
+<p>This is a paragraphThis is a paragraphThis is a paragraphThis is a paragraphThis is a paragraph</p>
+<p>This is a paragraphThis is a paragraphThis is a paragraphThis is a paragraphThis is a paragraph</p>
+</div>
+<p>Here it is overflow so we use br </p>
+<br><br><br><br>
+<p>below overflow is hidden</p>
+<div class="two">
+<p>This is a paragraphThis is a paragraphThis is a paragraphThis is a paragraphThis is a paragraph</p>
+<p>This is a paragraphThis is a paragraphThis is a paragraphThis is a paragraphThis is a paragraph</p>
+<p>This is a paragraphThis is a paragraphThis is a paragraphThis is a paragraphThis is a paragraph</p>
+<p>This is a paragraphThis is a paragraphThis is a paragraphThis is a paragraphThis is a paragraph</p>
+<p>This is a paragraphThis is a paragraphThis is a paragraphThis is a paragraphThis is a paragraph</p>
+<p>This is a paragraphThis is a paragraphThis is a paragraphThis is a paragraphThis is a paragraph</p>
+<p>This is a paragraphThis is a paragraphThis is a paragraphThis is a paragraphThis is a paragraph</p>
+</div>
+<br>
+<br>
+<p>below overflow is scroll (here it will add scroll bar)</p>
+<div class="three">
+<p>This is a paragraphThis is a paragraphThis is a paragraphThis is a paragraphThis is a paragraph</p>
+<p>This is a paragraphThis is a paragraphThis is a paragraphThis is a paragraphThis is a paragraph</p>
+<p>This is a paragraphThis is a paragraphThis is a paragraphThis is a paragraphThis is a paragraph</p>
+<p>This is a paragraphThis is a paragraphThis is a paragraphThis is a paragraphThis is a paragraph</p>
+<p>This is a paragraphThis is a paragraphThis is a paragraphThis is a paragraphThis is a paragraph</p>
+<p>This is a paragraphThis is a paragraphThis is a paragraphThis is a paragraphThis is a paragraph</p>
+<p>This is a paragraphThis is a paragraphThis is a paragraphThis is a paragraphThis is a paragraph</p>
+<p>This is a paragraphThis is a paragraphThis is a paragraphThis is a paragraphThis is a paragraph</p>
+<p>This is a paragraphThis is a paragraphThis is a paragraphThis is a paragraphThis is a paragraph</p>
+<p>This is a paragraphThis is a paragraphThis is a paragraphThis is a paragraphThis is a paragraph</p>
+<p>This is a paragraphThis is a paragraphThis is a paragraphThis is a paragraphThis is a paragraph</p>
+</div>
+<br>
+<br>
+<p>below is overflow is auto it will add scroll bar only if it is necessary</p>
+<div class="four">
+<p>This is a paragraphThis is a paragraphThis is a paragraphThis is a paragraphThis is a paragraph</p>
+<p>This is a paragraphThis is a paragraphThis is a paragraphThis is a paragraphThis is a paragraph</p>
+<p>This is a paragraphThis is a paragraphThis is a paragraphThis is a paragraphThis is a paragraph</p>
+<p>This is a paragraphThis is a paragraphThis is a paragraphThis is a paragraphThis is a paragraph</p>
+<p>This is a paragraphThis is a paragraphThis is a paragraphThis is a paragraphThis is a paragraph</p>
+<p>This is a paragraphThis is a paragraphThis is a paragraphThis is a paragraphThis is a paragraph</p>
+<p>This is a paragraphThis is a paragraphThis is a paragraphThis is a paragraphThis is a paragraph</p>
+<p>This is a paragraphThis is a paragraphThis is a paragraphThis is a paragraphThis is a paragraph</p>
+<p>This is a paragraphThis is a paragraphThis is a paragraphThis is a paragraphThis is a paragraph</p>
+<p>This is a paragraphThis is a paragraphThis is a paragraphThis is a paragraphThis is a paragraph</p>
+<p>This is a paragraphThis is a paragraphThis is a paragraphThis is a paragraphThis is a paragraph</p>
+</div>
+<br>
+<br>
+<p>below is overflow in x and y seperately</p>
+<div class="five">
+<p>This is a paragraphThis is a paragraphThis is a paragraphThis is a paragraphThis is a paragraph</p>
+<p>This is a paragraphThis is a paragraphThis is a paragraphThis is a paragraphThis is a paragraph</p>
+<p>This is a paragraphThis is a paragraphThis is a paragraphThis is a paragraphThis is a paragraph</p>
+<p>This is a paragraphThis is a paragraphThis is a paragraphThis is a paragraphThis is a paragraph</p>
+<p>This is a paragraphThis is a paragraphThis is a paragraphThis is a paragraphThis is a paragraph</p>
+<p>This is a paragraphThis is a paragraphThis is a paragraphThis is a paragraphThis is a paragraph</p>
+<p>This is a paragraphThis is a paragraphThis is a paragraphThis is a paragraphThis is a paragraph</p>
+<p>This is a paragraphThis is a paragraphThis is a paragraphThis is a paragraphThis is a paragraph</p>
+<p>This is a paragraphThis is a paragraphThis is a paragraphThis is a paragraphThis is a paragraph</p>
+<p>This is a paragraphThis is a paragraphThis is a paragraphThis is a paragraphThis is a paragraph</p>
+<p>This is a paragraphThis is a paragraphThis is a paragraphThis is a paragraphThis is a paragraph</p>
+</body>
+</html>

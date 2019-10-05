@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+counter-reset: section;
+}
+h1 {
+counter-reset: subsection;
+}
+h1::before {
+counter-increment: section;
+content: "SecTion " counter(section)": "
+}
+h2::before {
+counter-increment: subsection;
+content: counter(section)". " counter(subsection) " "
+}
+</style>
+</head>
+<body>
+<h1>This is h1</h1>
+<h2>This is h2</h2>
+<h2>This is h2</h2>
+<h1>This is h1</h1>
+<h2>This is h2</h2>
+<h2>This is h2</h2>
+<h1>This is h1</h1>
+<h2>This is h2</h2>
+<h2>This is h2</h2>
+</body>
+</html>

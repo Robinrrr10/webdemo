@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+ box-sizing: border-box;
+}
+.header, .footer {
+background-color: grey;
+color: white;
+padding: 15px;
+}
+.one {
+float: left;
+padding: 15px;
+}
+.five::after {
+content: "";
+clear: both;
+display: table;
+}
+.two {
+width: 25%;
+}
+.three {
+width: 75%;
+}
+.two ul {
+list-style-type: none;
+}
+.two li {
+background-color: blue;
+padding: 10px;
+margin: 10px 20px;
+color: red;
+}
+.two li:hover {
+background-color: skyblue;
+}
+</style>
+</head>
+<body>
+<div class="header">
+header content
+</div>
+<div class="five">
+ <div class="one two">
+  <ul>
+   <li>top 1</li>
+   <li>top 2</li>
+   <li>top 3</li>
+   <li>top 4</li>
+   <li>top 5</li>
+  </ul>
+ </div>
+ <div class="one three">
+  <h2>This is main heading</h2>
+  <p>This is the paragraph .This is the paragraph .This is the paragraph .This is the paragraph .This is the paragraph .This is the paragraph .This is the paragraph .This is the paragraph .This is the paragraph .This is the paragraph .This is the paragraph .This is the paragraph .This is the paragraph .This is the paragraph .This is the paragraph .This is the paragraph .This is the paragraph .This is the paragraph .This is the paragraph .</p>
+ </div>
+</div>
+<div class="footer">
+<p>footer content</p>
+</div>
+</body>
+</html>

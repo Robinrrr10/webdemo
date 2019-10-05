@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.one {
+position: relative;
+display: inline-block;
+}
+.two {
+display: none;
+position: absolute;
+background-color: skyblue;
+min-width: 160px;
+text-align: center;
+padding: 10px 20px;
+z-index: 1;
+}
+.one:hover .two {
+display: block;
+}
+</style>
+</head>
+<body>
+<h5>This is heading</h5>
+<div class="one">
+<span>Keep the mouse here to view the dropdown menu</span>
+<div class="two">
+<p>dropdown menu</p>
+</div>
+</div>
+</body>
+</html>

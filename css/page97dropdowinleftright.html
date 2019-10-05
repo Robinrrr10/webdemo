@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.two {
+background-color: green;
+padding: 15px 25px;
+text-align: center;
+cursor: pointer;
+color: white;
+font-size: 20px;
+border: none;
+}
+.one {
+position: relative;
+display: inline-block;
+}
+.three {
+display: none;
+position: absolute;
+right:0;
+background-color: grey;
+min-width: 200px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index;
+}
+.three a {
+color: red;
+padding: 14px 18px;
+text-decoration: none;
+display: block;
+}
+.three a:hover {
+background-color: blue;
+}
+.one:hover .three {
+display: block;
+}
+.one:hover .two {
+background-color: purple;
+}
+</style>
+</head>
+<body>
+<h3>This is heading</h3>
+<div class="one" style="float:left;">
+<button class="two">Left</button>
+<div class="three" style="left:0;">
+<a href="">Link 1</a>
+<a href="">Link 2</a>
+<a href="">Link 3</a>
+<a href="">Link 4</a>
+</div>
+</div>
+<div class="one" style="float:right;">
+<button class="two">Right</button>
+<div class="three">
+<a href="">rlink 1</a>
+<a href="">rlink 1</a>
+<a href="">rlink 1</a>
+<a href="">rlink 1</a>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.one {
+width: 100px;
+height:100px;
+background-color: red;
+-webkit-transition: width 3s;
+transition: width 3s;
+-webkit-transition-timing-function: linear;    /*same speed from starting to end*/
+transition-timing-function: linear;
+}
+.one:hover {
+width: 400px;
+}
+.two {
+width: 100px;
+height:100px;
+background-color: red;
+-webkit-transition: width 3s;
+transition: width 3s;
+-webkit-transition-timing-function: ease;   /*it is the default.starts slowly and then middle speed and end slowly*/
+transition-timing-function: ease;
+}
+.two:hover {
+width: 400px;
+}
+.three {
+width: 100px;
+height:100px;
+background-color: red;
+-webkit-transition: width 3s;
+transition: width 3s;
+-webkit-transition-timing-function: ease-in;  /*it will start slowly*/
+transition-timing-function: ease-in;
+}
+.three:hover {
+width: 400px;
+}
+.four {
+width: 100px;
+height:100px;
+background-color: red;
+-webkit-transition: width 3s;
+transition: width 3s;
+-webkit-transition-timing-function: ease-out;  /*it will end slowly*/
+transition-timing-function: ease-out;
+}
+.four:hover {
+width: 400px;
+}
+.five {
+width: 100px;
+height:100px;
+background-color: red;
+-webkit-transition: width 3s;
+transition: width 3s;
+-webkit-transition-timing-function: ease-in-out; /*it will start slowly and it will end slowly*/
+transition-timing-function: ease-in-out;
+}
+.five:hover {
+width: 400px;
+}
+.six {
+width: 100px;
+height:100px;
+background-color: red;
+-webkit-transition: width 3s;
+transition: width 3s;
+-webkit-transition-timing-function: cube-bezier(0.25,0.50,0.25,1);   /*manualy giving the value for the speed*/
+transition-timing-function: cube-bezier(0.25,0.50,0.25,1);
+}
+.six:hover {
+width: 400px;
+}
+</style>
+</head>
+<body>
+<div class="one">
+</div>
+<br>
+<br>
+<div class="two">
+</div>
+<br>
+<br>
+<div class="three">
+</div>
+<br>
+<br>
+<div class="four">
+</div>
+<br>
+<br>
+<div class="five">
+</div>
+<br>
+<br>
+<div class="six">
+</div>
+<br>
+<br>
+</body>
+</html>
